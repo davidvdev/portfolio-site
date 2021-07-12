@@ -21,7 +21,7 @@
             David Vogel
         </div>
         <nav>
-            <ul>
+            <ul class="nav-link-list">
                 <li class="nav-link"><a href="#About">About</a></li>
                 <li class="nav-link"><a href="#Tech">Tech</a></li>
                 <li class="nav-link"><a href="#Work">Work</a></li>
@@ -32,13 +32,13 @@
         <i class="fas fa-bars"></i>
     </header>
 
-    <section class="about-me">
+    <section id ="About" class="about-me">
         <h1>Hello!</h1>
         <img class = "about-me-img" src="./img/david.jpg" alt="A photo of me, David Vogel" />
         <p class="about-me-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </section>
 
-    <section class="tech">
+    <section id="Tech" class="tech">
         <h2>Tech</h2>
         <div>
             <ul>
@@ -52,7 +52,7 @@
         </div>
     </section>
 
-    <section class="work">
+    <section id="Work" class="work">
         <div class ="work-card-gallery">
             <!-- INSERT DYNAMIC CARD GALLERY HERE -->
             <h2>Work</h2>
@@ -73,12 +73,12 @@
         </div>
     </section>
 
-    <section class="blog">
+    <section id="Blog" class="blog">
         <!-- BLOG STUFF HERE IF YOU MAKE ONE -->
         <h2>Brain</h2>
     </section>
 
-    <section class="contact">
+    <section id="Contact" class="contact">
         <h2>Contact</h2>
         <div class="contact-form">
             <form id="contact-me" action="https://formspree.io/f/xnqlbjkz" method="POST">
@@ -87,8 +87,8 @@
                 <label for "email">Email:</label>
                 <input type="email" id="email" name="email"/>
                 <label for="message">Your Message:</label>
-                <textarea id="message" name="message" rows="5">Get in touch!</textarea>
-                <button id="contact-me-button">Submit</button>
+                <textarea id="message" name="message" rows="5"></textarea>
+                <button id="contact-me-button" type="submit">Submit</button>
                 <p id="contact-me-status"></p>
             </form>
         </div>

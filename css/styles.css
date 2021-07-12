@@ -21,13 +21,18 @@ h2{
     margin: 30px 0 10px 0;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 /* HEADER & NAV STYLING */
 header {
     background-color: var(--secondary-bg-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 3px 5px;
+    padding: 10px 5px;
 }
 
 nav ul {
@@ -36,6 +41,7 @@ nav ul {
 }
 nav ul li {
     padding: 5px;
+    display: none;
 }
 
 
@@ -135,11 +141,17 @@ input {
     width: 70%
 }
 
-#submit {
-    padding: 10px;
-    width: 50%;
-    text-align: center;
-    align-self: center;
+.contact-social-links {
+    display: flex;
+    align-items: center;
+}
+
+.contact-social-links ul li {
+    padding: 4px;
+    font-size: 0.9em;
+}
+.contact-social-links ul i {
+    margin-right: 3px;
 }
 
 /* FOOTER STYLING */
