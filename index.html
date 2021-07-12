@@ -81,14 +81,15 @@
     <section class="contact">
         <h2>Contact</h2>
         <div class="contact-form">
-            <form>
+            <form id="contact-me" action="https://formspree.io/f/xnqlbjkz" method="POST">
                 <label for "name">Name:</label>
                 <input type="text" id="name" name="name"/>
                 <label for "email">Email:</label>
                 <input type="email" id="email" name="email"/>
                 <label for="message">Your Message:</label>
                 <textarea id="message" name="message" rows="5">Get in touch!</textarea>
-                <input id="submit" type="submit"/>
+                <button id="contact-me-button">Submit</button>
+                <p id="contact-me-status"></p>
             </form>
         </div>
         <div class="contact-social-links">
