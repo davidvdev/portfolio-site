@@ -69,25 +69,27 @@ img.about-me-img {
     padding: 5px 12px;
 }
 
-.work-card .card-buttons {
+.work-card .card-button-group {
     display: flex;
     justify-content: space-around;
     padding: 5px;
 }
 
-.work-card button {
+.work-card a {
+    background-color: var(--secondary-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 30%;
     height: 30px;
-    border-radius: 0;
-    border: none;
 }
 
-.work-card button:hover{
+.work-card a:hover{
     background-color: var(--accent-bg-color);
 }
 
-.work-card button:active{
-background-color: var(--secondary-bg-color);
+.work-card a:active{
+    background-color: var(--secondary-bg-color);
 }
 
 /* CONTACT & SOCIAL LINKS STYLING */
