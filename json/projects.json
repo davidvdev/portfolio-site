@@ -1,10 +1,10 @@
 [
   {
-    "name": "dfsdfsfsdf",
-    "description":"dsfdfsdfsdf",
-    "github": "http://...",
-    "deployed": "http://...",
-    "image": "http://..."
+    "name": "Retro Rainbow",
+    "description":"An experiment with Javscript, jQuery, and color combinations.",
+    "github": "https://github.com/davidvdev/retro-rainbow",
+    "deployed": "retro-rainbow.vercel.app",
+    "image": "../img/retro-rainbow.png"
   },
   {
     "name": "dfsdfsfsdf",
