@@ -54,9 +54,17 @@ img.about-me-img {
 .tech ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 0 12px;
+    margin: 0 12px 0 24px;
 }
 
+.tech ul li {
+    padding: 4px;
+}
+
+#really-no-icon-why {
+    height: 1em;
+    vertical-align: bottom;
+}
 
 /* WORK STYLING */
 .work {
