@@ -88,4 +88,5 @@ function reverse(string) {
 #### SAMPLE.....
 | _ERROR_ | RESOLUTION |
 | :---- | ---------: |
-|_app.js:34 Uncaught SyntaxError: Unexpected identifier_ | Missing comma after first object in sources {} object
+|_app.js:34 Uncaught SyntaxError: Unexpected identifier_ | Missing comma after first object in sources {} object|
+|_css: project card image breaking out through rounded corners of card div_ | used `border-radius: 10px 10px 0 0;` to give rounded corners to the top left and right corners on the image|

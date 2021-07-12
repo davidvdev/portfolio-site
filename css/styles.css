@@ -1,5 +1,126 @@
 
-section{
-    border: 1px solid teal;
+/* * {
+    border: 1px solid teal !important;
+} */
+
+/* Color Variables */
+:root {
+    --main-bg-color: white;
+    --secondary-bg-color: grey;
+    --accent-bg-color: orange;
 }
 
+/* HEADER & NAV STYLING */
+header {
+    background-color: var(--secondary-bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 5px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+nav ul li {
+    padding: 5px;
+}
+
+
+/* ABOUT STYLING */
+img.about-me-img {
+    max-width: 90vw;
+}
+
+/* TECH STYLING */
+.tech ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 12px;
+}
+
+
+/* WORK STYLING */
+.work {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.work-card{
+    grid-column: 1 / 2;
+    width: 90%;
+    border-radius: 12px;
+    margin: 5px auto;
+    border:1px solid black;
+}
+
+.work-card img {
+    border-radius: 8px 8px 0 0 ;
+    object-fit: cover;
+    width: 100%;
+}
+
+.work-card h3 {
+    font-weight: bold;
+}
+
+.work-card .card-text {
+    padding: 5px 12px;
+}
+
+.work-card .card-buttons {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+.work-card button {
+    width: 30%;
+    height: 30px;
+    border-radius: 0;
+    border: none;
+}
+
+.work-card button:hover{
+    background-color: var(--accent-bg-color);
+}
+
+.work-card button:active{
+background-color: var(--secondary-bg-color);
+}
+
+/* CONTACT & SOCIAL LINKS STYLING */
+.contact {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+/* FOOTER STYLING */
+footer {
+    background-color: var(--secondary-bg-color);;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+footer .sitemap,footer .site-links{
+    margin: 5px;
+    font-size: 0.9em;
+}
+
+footer .sitemap {
+    /* margin: 5px; */
+    grid-column: 1 / 2;
+}
+
+footer .site-links{
+    /* margin: 5px; */
+    grid-column: 2 / 3;
+}
+
+footer .copyright {
+    margin: 2px;
+    font-size: 0.7em;
+    grid-column: 1 / span 2;
+    text-align: center;
+    align-self: end;
+}

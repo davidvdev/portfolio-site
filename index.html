@@ -5,9 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- CSS RESET & STYLESHEET -->
     <link rel='stylesheet' href='https://meyerweb.com/eric/tools/css/reset/reset.css'>
     <link rel="stylesheet" href="./css/styles.css">
+    <!-- FONT AWESOME LINK -->
+    <script src="https://kit.fontawesome.com/fb68cd40a0.js" crossorigin="anonymous"></script>
+    <!-- JQUERY LINK -->
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- CUSTOM JS SCRIPTING -->
     <script src="js/app.js" defer></script>
 </head>
 <body>
@@ -17,18 +22,19 @@
         </div>
         <nav>
             <ul>
-                <li><a href="#About">About</a></li>
-                <li><a href="#Tech">Tech</a></li>
-                <li><a href="#Work">Work</a></li>
-                <li><a href="#Blog">Blog</a></li>
-                <li><a href="#Contact">Contact</a></li>
+                <li class="nav-link"><a href="#About">About</a></li>
+                <li class="nav-link"><a href="#Tech">Tech</a></li>
+                <li class="nav-link"><a href="#Work">Work</a></li>
+                <li class="nav-link"><a href="#Blog">Blog</a></li>
+                <li class="nav-link"><a href="#Contact">Contact</a></li>
             </ul>
         </nav>
+        <i class="fas fa-bars"></i>
     </header>
 
     <section class="about-me">
         <h1>Hello!</h1>
-        <img class = "about-me-img" src="" alt="A photo of me, David Vogel" />
+        <img class = "about-me-img" src="./img/david.jpg" alt="A photo of me, David Vogel" />
         <p class="about-me-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </section>
 
@@ -36,7 +42,7 @@
         <h2>Tech</h2>
         <div>
             <ul>
-                <li class="tech-item"><img src="" alt=" Icon"/> tech</li>
+                <li class="tech-item"><i class="fab fa-github"></i> Github</li>
                 <li class="tech-item"><img src="" alt=" Icon"/> tech</li>
                 <li class="tech-item"><img src="" alt=" Icon"/> tech</li>
                 <li class="tech-item"><img src="" alt=" Icon"/> tech</li>
@@ -49,11 +55,25 @@
     <section class="work">
         <div class ="work-card-gallery">
             <!-- INSERT DYNAMIC CARD GALLERY HERE -->
+            WORK CARD GALLERY
+            <div class="work-card">
+                <img src="img/david.jpg" alt="a photo of the project" />
+                <div class="card-text">
+                    <h3>Me (David Vogel)</h3>
+                    <p>I'm always working on improving myself ;) Also, if you're seeing this, something has gone horribly wrong with the API and I need you to call for help. Please contact me.</p>
+                </div>
+                <div class="card-buttons">
+                    <button class="card-code">Code</button>
+                    <button class="card-live">Live</button>
+                    <button class="card-ask">Ask Me</button>
+                </div>
+            </div>
         </div>
     </section>
 
     <section class="blog">
         <!-- BLOG STUFF HERE IF YOU MAKE ONE -->
+        BLOG HERE IF HAPPENS
     </section>
 
     <section class="contact">
@@ -62,23 +82,23 @@
         </div>
         <div class="contact-social-links">
             <ul>
-                <li><a href="">Github</a></li>
-                <li><a href="">Linkedin</a></li>
-                <li><a href="">Twitter</a></li>
-                <li><a href="">Resume</a></li>
+                <li><a href=""><i class="fab fa-github"></i>Github</a></li>
+                <li><a href=""><i class="fab fa-linkedin"></i>Linkedin</a></li>
+                <li><a href=""><i class="fab fa-twitter"></i>Twitter</a></li>
+                <li><a href=""><i class="far fa-file-alt"></i>Resume</a></li>
             </ul>
         </div>
     </section>
 
     <footer>
         <div class="sitemap">
-
+            SITE MAP
         </div>
         <div class="site-links">
-
+            SITE LINKS
         </div>
         <div class="copyright">
-            Copyright David Vogel 2021 | Site made by David Vogel | <a href="">See the repo!</a>
+            Copyright David Vogel 2021 | Site made by David Vogel | <a href="https://github.com/davidvdev/portfolio-site">See the repo!</a>
         </div>
     </footer>
 </body>
