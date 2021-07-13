@@ -47,9 +47,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 25px;;
+    height: 25px;
     padding: 10px 10px;
-    /* color:var(--main-bg-color); */
 }
 
 nav ul {
@@ -229,6 +228,10 @@ footer .copyright {
 /* RESPONSIVE DESIGN BREAKPOINTS */
 /* TABLET */
 @media screen and (min-width: 768px){
+    main {
+        margin: 30px auto;
+        width: 95%
+    }
     /* HEADER & NAV */
     header i.fas {
         display: none;
@@ -242,7 +245,6 @@ footer .copyright {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-        margin: 30px 20px;
     }
     #About img.about-me-img {
         grid-column: 1 / 2;
@@ -294,6 +296,21 @@ footer .copyright {
 
 /* LAPTOP + */
 @media screen and (min-width: 1024px){
+    /* all sections */
+    main {
+        margin: 20px auto;
+        width: 90%;
+    }
+    /* HEADER */
+    header {
+        height: 40px;
+    }
+    /* ABOUT */
+    #About img.about-me-img {
+        max-width: 60%;
+        justify-self: end;
+        margin-right: 50px;
+    }
     /* WORK */
     #Work .work-card-gallery{
         grid-template-columns: repeat(3, 1fr);
