@@ -34,7 +34,7 @@ h2 {
     text-align: center;
     font-weight: 600;
     font-size: 2.5em;
-    margin: 60px 0 10px 0;
+    margin: 60px 0 20px 0;
 }
 
 a {
@@ -141,11 +141,11 @@ img.about-me-img {
     border-radius: 3px;
 }
 
-.work-card a:hover{
+.work-card a:hover, .contact-form button:hover{
     background-color: var(--ac-color-5);
 }
 
-.work-card a:active{
+.work-card a:active, .contact-form button:active{
     background-color: var(--ac-color-4);
     border-radius: 7px;
 }
@@ -165,21 +165,34 @@ img.about-me-img {
 .contact-form{
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: 10px;
 }
 .contact-form form{
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 95%;
 }
 
-input, textarea, label {
+input, textarea, label, button {
+    font-family: inherit;
     padding: 2px;
-    margin: 2px
+    margin: 2px;
+}
+
+input, textarea {
+    border: 1px solid var(--secondary-bg-color);
+    border-radius: 3px;
 }
 
 input {
     width: 70%
+}
+
+.contact-form button{
+    margin-top: 20px;
+    background-color: var(--secondary-bg-color);
+    border: none;
+    border-radius: 3px;
 }
 
 .contact-social-links {
@@ -207,12 +220,10 @@ footer .sitemap,footer .site-links{
 }
 
 footer .sitemap {
-    /* margin: 5px; */
     grid-column: 1 / 2;
 }
 
 footer .site-links{
-    /* margin: 5px; */
     grid-column: 2 / 3;
 }
 
@@ -267,7 +278,7 @@ footer .copyright {
         grid-template-columns: repeat(5, 1fr);
     }
     #Tech ul li {
-        font-size: 1.3em;
+        font-size: 1.2em;
         padding: 16px 8px;
     }
     /* WORK */
@@ -278,8 +289,8 @@ footer .copyright {
     #Contact {
         grid-template-rows: 1fr 3fr 1fr;
     }
-    #Contact button {
-        margin-top: 12px;
+    #Contact form {
+        max-width: 350px
     }
     #Contact .contact-social-links{
         grid-row: 3 / 4;

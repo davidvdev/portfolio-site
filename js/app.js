@@ -43,7 +43,7 @@ $.ajax("./json/projects.json")
 .catch((error) => console.log(error))
 
 // Formspree Script
-var form = document.getElementById("my-form");
+var form = document.getElementById("contact-me");
     
 async function handleSubmit(event) {
   event.preventDefault();
