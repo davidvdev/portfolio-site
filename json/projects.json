@@ -3,28 +3,21 @@
     "name": "Retro Rainbow",
     "description":"An experiment with Javscript, jQuery, and color combinations.",
     "github": "https://github.com/davidvdev/retro-rainbow",
-    "deployed": "retro-rainbow.vercel.app",
+    "deployed": "https://retro-rainbow.vercel.app",
     "image": "../img/retro-rainbow.png"
   },
   {
-    "name": "Retro Rainbow",
-    "description":"An experiment with Javscript, jQuery, and color combinations.",
-    "github": "https://github.com/davidvdev/retro-rainbow",
-    "deployed": "retro-rainbow.vercel.app",
-    "image": "../img/retro-rainbow.png"
+    "name": "Responsive Web Design Exercise",
+    "description":"An exercise done in class to learn the finer points of responsive design using media queries alongside CSS Grid and Flexbox.",
+    "github": "https://github.com/davidvdev/responsive-web-design-exercise",
+    "deployed": "https://responsive-web-design-exercise.vercel.app/",
+    "image": "../img/responsive-web-design-ex.png"
   },
   {
-    "name": "Retro Rainbow",
-    "description":"An experiment with Javscript, jQuery, and color combinations.",
-    "github": "https://github.com/davidvdev/retro-rainbow",
-    "deployed": "retro-rainbow.vercel.app",
-    "image": "../img/retro-rainbow.png"
-  },
-  {
-    "name": "Retro Rainbow",
-    "description":"An experiment with Javscript, jQuery, and color combinations.",
-    "github": "https://github.com/davidvdev/retro-rainbow",
-    "deployed": "retro-rainbow.vercel.app",
-    "image": "../img/retro-rainbow.png"
+    "name": "Bootstrap Album Site",
+    "description":"Practicing my Bootstrap skills by recreating this photo album landing page.",
+    "github": "https://github.com/davidvdev/intro-to-bootstrap-lab",
+    "deployed": "https://intro-to-bootstrap-lab.vercel.app/",
+    "image": "../img/bootstrap-lab.png"
   }
 ]

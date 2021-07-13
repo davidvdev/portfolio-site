@@ -103,6 +103,9 @@ img.about-me-img {
     grid-template-columns: repeat(1, 1fr);
 }
 .work-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 90%;
     border-radius: 12px;
     margin: 5px auto 20px auto;
@@ -128,6 +131,7 @@ img.about-me-img {
 .work-card .card-button-group {
     display: flex;
     justify-content: space-around;
+    align-content: flex-end;
     padding: 8px;
 }
 

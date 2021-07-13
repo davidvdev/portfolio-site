@@ -32,8 +32,8 @@ $.ajax("./json/projects.json")
             <p>${project.description}</p>
         </div>
         <div class="card-button-group">
-            <a class="card-button card-code">Code</a>
-            <a class="card-button card-live">Live</a>
+            <a class="card-button card-code" href="${project.github}">Code</a>
+            <a class="card-button card-live"href="${project.deployed}">Live</a>
             <a class="card-button card-ask">Ask Me</a>
         </div>
         `)
