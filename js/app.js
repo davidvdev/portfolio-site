@@ -4,12 +4,17 @@
 // W3: https://www.w3schools.com/howto/howto_js_mobile_navbar.asp
 // SO: https://stackoverflow.com/questions/18050761/toggle-visibility-property-of-div
 
+// ... and then a lot of that got scrapped for jQuery .slideToggle
+// https://api.jquery.com/slideToggle/
+
 const toggleNav = $(`.fa-bars`).on(`click`, () => {
-    const $NavLinks = $(`.nav-link`);
-    if ($NavLinks.css(`display`) === `block`) {
-        $NavLinks.css(`display`,`none`)
+    const $NavLinks = $(`.nav-link-list`);
+    if ($NavLinks.css(`display`) !== `none`) {
+      $NavLinks.slideToggle(500)
+      // $NavLinks.css(`display`,`none`) 
     } else {
-        $NavLinks.css(`display`,`block`)
+        $NavLinks.slideToggle(500)
+        // $NavLinks.css(`display`,`block`)
     }
 })
 
