@@ -15,6 +15,9 @@
     --ac-color-5: #009EDA;
 }
 /* GENERAL PAGE STYLING */
+html {
+    scroll-behavior: smooth;
+}
 header, footer {
     background-color: var(--ac-color-0);
     color: white;
@@ -47,17 +50,21 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 25px;
-    padding: 10px 10px;
+    height: 45px;
+    padding: 0 8px;
 }
 
 nav ul {
     display: flex;
     justify-content: space-around;
+    height: 100%;
 }
 nav ul li {
-    padding: 5px;
     display: none;
+}
+
+nav ul li a {
+    padding: 8px;
 }
 
 
@@ -111,6 +118,11 @@ img.about-me-img {
     margin: 5px auto 20px auto;
     border:1px solid var(--ac-color-0);
     background-color: var(--main-bg-color);
+    transition: all .5s;
+}
+
+.work-card:hover {
+    width: 95%;
 }
 
 .work-card img {
@@ -211,6 +223,9 @@ input {
 .contact-social-links ul i {
     margin-right: 3px;
 }
+.contact-social-links a:hover, footer a:hover {
+    color: var(--ac-color-2);
+}
 
 /* FOOTER STYLING */
 footer {
@@ -253,7 +268,15 @@ footer .copyright {
     }
     nav ul li {
         display: block;
-        padding: 0 20px;
+    }
+    nav ul li a{
+        padding: 10px;
+    }
+    nav ul li a:hover{
+        background-color: var(--ac-color-5);
+    }
+    nav ul li a:active{
+        background-color: var(--ac-color-4);
     }
     /* ABOUT */
     #About {
