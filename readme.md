@@ -66,13 +66,13 @@ Link To Site  | One Thing I'd Like To Incorporate |
 | 2B - Color Lines Background        |  M  | 1.5 hrs  | 1.5 hrs |
 | 3B - Icons for Tech                |  M  | 0.5 hrs  | 0.5 hrs |
 | 4D - Hover and Click Animations    |  M  | 1 hr     | 0.5 hrs |
-| 5 - Blog Section                   |  L  | 2 hrs    |
+| 5 - Blog Section                   |  L  | 2 hrs    | 
 | 5A - Design Summary Cards Container|  L  | 1 hr     |
 | 5B - Design Summary Cards          |  L  | 1 hr     |
 | 6B - Notification on Submit        |  H  | 1.5 hrs  |
 | 6C - Icon Links to Socials         |  H  | 0.5 hrs  | 0.5 hrs |
 | 7B - Footer Site Map               |  H  | 0.5 hrs  |
-| Total                              |  H  | 10.5 hrs | hrs |
+| Total                              |  H  | 10.5 hrs | 5 hrs   |
 ## Additional Libraries
  - jQuery
 	- interaction between JS and the DOM
