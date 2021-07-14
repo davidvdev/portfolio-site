@@ -77,17 +77,23 @@ Link To Site  | One Thing I'd Like To Incorporate |
  - jQuery
 	- interaction between JS and the DOM
 ## Code Snippet
-Use this section to include a brief code snippet of functionality that you are proud of an a brief description  
-```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
+This section was revised maybe 3 different times as the functionality requirements changed. I wanted to avoid pulling in bootstrap for this one component, so I figured out how to make the toggleable nav myself! Commented out is the original display settings before the sliding nav menu was implemented. 
+```js
+const toggleNav = $(`.fa-bars`).on(`click`, () => {
+    const $NavLinks = $(`.nav-link-list`);
+    if ($NavLinks.css(`display`) !== `none`) {
+      $NavLinks.slideToggle(500)
+      // $NavLinks.css(`display`,`none`) 
+    } else {
+        $NavLinks.slideToggle(500)
+        // $NavLinks.css(`display`,`block`)
+    }
+})
 ```
 ## Issues and Resolutions
  Use this section to list of all major issues encountered and their resolution.
 #### SAMPLE.....
 | _ERROR_ | RESOLUTION |
 | :---- | ---------: |
-|_app.js:34 Uncaught SyntaxError: Unexpected identifier_ | Missing comma after first object in sources {} object|
 |_css: project card image breaking out through rounded corners of card div_ | used `border-radius: 10px 10px 0 0;` to give rounded corners to the top left and right corners on the image|
 |_app.js:65 Uncaught TypeError: Cannot read property 'addEventListener' of null_ | default ID for the form needed to be changed to match the customized ID of my form. (much easier fix than I was anticipating)|
