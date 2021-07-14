@@ -7,6 +7,7 @@
 :root {
     --main-bg-color: #FFFFFF;
     --secondary-bg-color: #C2C1BD;
+    --transparent-secondary-bg: rgba(194, 193, 189, 0.6);
     --ac-color-0: #5D594F;
     --ac-color-1: #D12625;
     --ac-color-2: #DA6241;
@@ -17,9 +18,10 @@
 /* GENERAL PAGE STYLING */
 html {
     scroll-behavior: smooth;
-    /* background-image: url("../img/C64-lines-tsp.svg"), url("../img/C64-lines-tsp-r.svg");
-    background-size: 120%;
-    background-position: top right; */
+    background-image: url("../img/c64-double.svg");
+    background-color: var(--secondary-bg-color);
+    background-position:top center;
+    
 }
 header, footer {
     background-color: var(--ac-color-0);
@@ -32,15 +34,21 @@ body {
 }
 h1 {
     font-weight: 600;
+    margin: 0 auto;
     text-align: center;
     font-size: 4em;
+    background-color: var(--transparent-secondary-bg);
+    border-radius: 5px 5px;
 }
 
 h2 {
-    text-align: center;
     font-weight: 600;
     font-size: 2.5em;
-    margin: 60px 0 20px 0;
+    width: fit-content;
+    padding: 8px;
+    margin: 0 auto;
+    background-color: var(--transparent-secondary-bg);
+    border-radius: 5px 5px;
 }
 
 a {
@@ -81,6 +89,9 @@ nav ul li a:active {
     background-color: var(--ac-color-5);
 }
 
+section {
+    padding-bottom: 80px;
+}
 
 /* ABOUT STYLING */
 
@@ -90,14 +101,16 @@ nav ul li a:active {
 }
 img.about-me-img {
     border-radius:90px 12px;
-    max-width: 85vw;
+    max-width: 80vw;
     margin: 0 0 15px 0;
     align-self: center;
 }
 
 #About p {
-    padding:8px;
+    padding: 8px;
     margin: 8px;
+    background-color: var(--transparent-secondary-bg);
+    border-radius: 5px 5px;
 }
 
 /* TECH STYLING */
@@ -105,7 +118,9 @@ img.about-me-img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
-    margin: 0 12px;
+    margin: 25px 12px;
+    background-color: var(--transparent-secondary-bg);
+    border-radius: 5px;
 }
 
 .tech ul li {
@@ -120,6 +135,7 @@ img.about-me-img {
 
 /* WORK STYLING */
 .work-card-gallery {
+    margin-top: 25px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
 }
@@ -162,7 +178,8 @@ img.about-me-img {
 }
 
 .work-card a {
-    background-color: var(--secondary-bg-color);
+    background-color: var(--ac-color-0);
+    color: var(--main-bg-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -188,7 +205,9 @@ img.about-me-img {
 }
 
 .contact h2 {
-    height: auto;
+    margin-top: 40px;
+    padding:0 8px;
+    height: fit-content;
     grid-row: 1 / 2;
     grid-column: 1 / span 2;
 }
@@ -201,6 +220,11 @@ img.about-me-img {
     display: flex;
     flex-direction: column;
     width: 95%;
+}
+label {
+    background-color: var(--transparent-secondary-bg);
+    border-radius: 5px 5px;
+    width: fit-content;
 }
 
 input, textarea, label, button {
@@ -220,7 +244,8 @@ input {
 
 .contact-form button{
     margin-top: 20px;
-    background-color: var(--secondary-bg-color);
+    background-color: var(--ac-color-0);
+    color: var(--main-bg-color);
     border: none;
     border-radius: 3px;
 }
@@ -228,6 +253,11 @@ input {
 .contact-social-links {
     display: flex;
     align-items: center;
+}
+
+.contact-social-links ul {
+    background-color: var(--transparent-secondary-bg);
+    border-radius: 4px;
 }
 
 .contact-social-links ul li {
@@ -272,6 +302,9 @@ footer .copyright {
 /* RESPONSIVE DESIGN BREAKPOINTS */
 /* TABLET */
 @media screen and (min-width: 768px){
+    html {
+        background-position: top;
+    }
     main {
         margin: 30px auto;
         width: 95%
@@ -287,9 +320,6 @@ footer .copyright {
         padding: 0;
         top: 0;
     }
-    /* nav ul li {
-        display: block;
-    } */
     nav ul li a{
         height: auto;
         width: auto;
@@ -314,9 +344,8 @@ footer .copyright {
         justify-self: center;
     }
     #About h1, #About p {
+        height: fit-content;
         text-align: left;
-        margin: 0;
-        padding: 0;
         grid-column: 2 / 3;
     }
     #About p {
@@ -356,23 +385,30 @@ footer .copyright {
 
 /* LAPTOP + */
 @media screen and (min-width: 1024px){
-    /* all sections */
-    main {
-        margin: 20px auto;
-        width: 90%;
-    }
     /* HEADER */
     header {
         height: 40px;
     }
     /* ABOUT */
     #About img.about-me-img {
-        max-width: 60%;
+        max-width: 55%;
         justify-self: end;
         margin-right: 50px;
     }
     /* WORK */
     #Work .work-card-gallery{
         grid-template-columns: repeat(3, 1fr);
+    }
+}
+/* VERY BIG SCREEN */
+@media screen and (min-width: 1920px){
+    html{
+        background-size: cover;
+    }
+    main{
+        width: 60%;
+    }
+    header{
+        padding: 20px 20%;
     }
 }
