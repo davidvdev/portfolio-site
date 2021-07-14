@@ -39,7 +39,7 @@ $.ajax("./json/projects.json")
         <div class="card-button-group">
             <a class="card-button card-code" href="${project.github}">Code</a>
             <a class="card-button card-live"href="${project.deployed}">Live</a>
-            <a class="card-button card-ask">Ask Me</a>
+            <a class="card-button card-ask-${project.index}" href="#Contact">Ask Me</a>
         </div>
         `)
         $container.append($card)
