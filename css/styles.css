@@ -7,7 +7,8 @@
 :root {
     --main-bg-color: #FFFFFF;
     --secondary-bg-color: #C2C1BD;
-    --transparent-secondary-bg: rgba(194, 193, 189, 0.6);
+    /* --transparent-secondary-bg: rgba(194, 193, 189, 0.6); */
+    /* --transparent-secondary-bg: white; */
     --ac-color-0: #5D594F;
     --ac-color-1: #D12625;
     --ac-color-2: #DA6241;
@@ -43,6 +44,8 @@ h1 {
 
 h2 {
     font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
     font-size: 2.5em;
     width: fit-content;
     padding: 8px;
@@ -71,7 +74,6 @@ header i.fas:active {
 nav ul {
     display: none;
     background-color: var(--ac-color-0);
-    /* working on dropdown box */
     flex-direction: column;
     position: absolute;
     padding: 10px 0 0 0;
@@ -107,6 +109,8 @@ img.about-me-img {
 }
 
 #About p {
+    font-size: 1.2em;
+    line-height: 1.3em;
     padding: 8px;
     margin: 8px;
     background-color: var(--transparent-secondary-bg);
@@ -240,6 +244,10 @@ input, textarea {
 
 input {
     width: 70%
+}
+
+#Contact{
+    padding-bottom: 0;
 }
 
 .contact-form button{
