@@ -61,10 +61,11 @@ a {
 
 /* HEADER & NAV STYLING */
 header {
+    font-size: 1.4em;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 45px;
+    height: 75px;
     padding: 0 8px;
 }
 header i.fas:active {
@@ -76,15 +77,14 @@ nav ul {
     background-color: var(--ac-color-0);
     flex-direction: column;
     position: absolute;
-    padding: 10px 0 0 0;
-    top: 40px;
+    padding: 5px 0 0 0;
+    border-radius: 0 0 0 8px;
+    top: 70px;
     right: 0;
 }
 
 nav ul li a {
     display: block;
-    width: 100%;
-    height: 100%;
     padding: 8px;
 }
 nav ul li a:active {
@@ -96,12 +96,16 @@ section {
 }
 
 /* ABOUT STYLING */
+.mobile-space{
+    height: 40vh
+}
 
 #About {
     display: flex;
     flex-direction: column;
 }
 img.about-me-img {
+    border: 8px solid var(--ac-color-3);
     border-radius:90px 12px;
     max-width: 80vw;
     margin: 0 0 15px 0;
@@ -111,10 +115,12 @@ img.about-me-img {
 #About p {
     font-size: 1.2em;
     line-height: 1.3em;
-    padding: 8px;
-    margin: 8px;
-    background-color: var(--transparent-secondary-bg);
-    border-radius: 5px 5px;
+    padding: 12px;
+    margin: 8px 0 8px 8px;
+    background-color: var(--main-bg-color);
+    border-radius: 8px 0 0 4px;
+    border : 1px solid var(--ac-color-0);
+    border-right: none;
 }
 
 /* TECH STYLING */
@@ -152,11 +158,11 @@ img.about-me-img {
     margin: 5px auto 20px auto;
     border:1px solid var(--ac-color-0);
     background-color: var(--main-bg-color);
-    transition: all .5s;
+    transition: all 0.3s;
 }
 
 .work-card:hover {
-    width: 95%;
+    transform: scale(1.02);
 }
 
 .work-card img {
@@ -281,6 +287,7 @@ input {
 
 /* FOOTER STYLING */
 footer {
+    height: 60px;
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
@@ -300,7 +307,7 @@ footer .site-links{
 
 footer .copyright {
     margin: 2px 2px 6px 2px;
-    font-size: 0.7em;
+    font-size: 1em;
     grid-column: 1 / span 2;
     grid-row: 2 / 3;
     text-align: center;
@@ -315,22 +322,34 @@ footer .copyright {
     }
     main {
         margin: 30px auto;
-        width: 95%
     }
     /* HEADER & NAV */
     header i.fas {
         display: none;
     }
+    nav {
+        height: inherit;
+    }
     nav ul {
+        height: inherit;
+        align-items: center;
         position:relative;
         display: flex;
         flex-direction: row;
         padding: 0;
         top: 0;
     }
+    nav ul li {
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
     nav ul li a{
-        height: auto;
-        width: auto;
+        height: inherit;
+        width: inherit;
+        display: flex;
+        align-items: center;
+        padding: 0 12px;
     }
     nav ul li a:hover{
         background-color: var(--ac-color-5);
@@ -339,14 +358,17 @@ footer .copyright {
         background-color: var(--ac-color-4);
     }
     /* ABOUT */
+    .mobile-space{
+        display: none;
+    }
     #About {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 2fr 1fr;
     }
     #About img.about-me-img {
         grid-column: 1 / 2;
-        grid-row: 1 / span 3;
+        grid-row: 2 / span 2;
         width: 80%;
         align-self: center;
         justify-self: center;
@@ -356,7 +378,11 @@ footer .copyright {
         text-align: left;
         grid-column: 2 / 3;
     }
+    #About h1 {
+        align-self: end;
+    }
     #About p {
+        align-self: top;
         grid-row: 2 / span 2;
     }
     /* TECH */
@@ -398,6 +424,9 @@ footer .copyright {
         height: 40px;
     }
     /* ABOUT */
+    #About{
+        margin-top: 75px;
+    }
     #About img.about-me-img {
         max-width: 55%;
         justify-self: end;
