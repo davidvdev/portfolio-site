@@ -432,6 +432,10 @@ footer .copyright {
         justify-self: end;
         margin-right: 50px;
     }
+    #About p {
+        border-radius: 8px 4px;
+        border : 1px solid var(--ac-color-0);
+    }
     /* WORK */
     #Work .work-card-gallery{
         grid-template-columns: repeat(3, 1fr);
@@ -446,6 +450,7 @@ footer .copyright {
         width: 60%;
     }
     header{
-        padding: 20px 20%;
+        height: 80px;
+        padding: 0 20%;
     }
 }
