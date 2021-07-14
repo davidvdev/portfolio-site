@@ -6,8 +6,8 @@ You are **responsible** for scheduling time with your squad to seek approval for
 | --- | -------------------------------------------- | ---------- |
 |Day 1| Project Description                          | Complete   |
 |Day 1| Wireframes / Priority Matrix / Timeline      | Complete   |
-|Day 3| Core Application Structure (HTML, CSS, etc.) | Incomplete |
-|Day 4| MVP & Bug Fixes                              | Incomplete |
+|Day 3| Core Application Structure (HTML, CSS, etc.) | Complete   |
+|Day 4| MVP & Bug Fixes                              | Complete   |
 |Day 5| Final Touches                                | Incomplete |
 |Day 6| Present                                      | Incomplete |
 ## Project Description
@@ -45,32 +45,32 @@ Link To Site  | One Thing I'd Like To Incorporate |
 ## Functional Components
 #### MVP
 | Component                       | Priority | Estimated Time | Actual Time |
-| ------------------------------------ | :-: |  :-----: | :---: | 
-| 1A - Flexbox Nav                     |  H  | 1hr      |
-| 1B - Responsive Hamburger Nav        |  H  | 1hr      |
-| 2A - Photo Placement & Design        |  M  | 1 hr     |
-| 2C - Write Personal Brand            |  L  | 0.5 hrs  |
-| 3A - CSS Grid Layout                 |  H  | 1 hr     |
-| 3C - Identify Relevant Skills & Tech |  M  | 0.5 hrs  |
-| 4A - API Updates Project Cards       |  H  | 2 hrs    |
-| 4B - Responsive Card Gallery         |  M  | 1.5 hrs  |
-| 4C - Card Layout & Buttons           |  M  | 2 hrs    |
-| 6A - Working Contact Form            |  H  | 2 hrs    |
-| 7A - Footer Copyright                |  L  | 0.5 hrs  |
-| 7C - Footer Site Links & Resume      |  L  | 0.5 hrs  |
-| Total                                |  H  | 13.5 hrs | hrs |
+| ------------------------------------ | :-: |  :-----: | :-----: | 
+| 1A - Flexbox Nav                     |  H  | 1hr      | 0.5 hrs |
+| 1B - Responsive Hamburger Nav        |  H  | 1hr      | 1 hr    |
+| 2A - Photo Placement & Design        |  M  | 1 hr     | 1 hr   |
+| 2C - Write Personal Brand            |  L  | 0.5 hrs  | 0.5 hrs |
+| 3A - CSS Grid Layout                 |  H  | 1 hr     | 0.5 hrs |
+| 3C - Identify Relevant Skills & Tech |  M  | 0.5 hrs  | 0.5 hrs |
+| 4A - API Updates Project Cards       |  H  | 2 hrs    | 0.5 hrs |
+| 4B - Responsive Card Gallery         |  M  | 1.5 hrs  | 0.5 hrs |
+| 4C - Card Layout & Buttons           |  M  | 2 hrs    | 1 hr    |
+| 6A - Working Contact Form            |  H  | 2 hrs    | 1 hr    |
+| 7A - Footer Copyright                |  L  | 0.5 hrs  | 0.5 hrs |
+| 7C - Footer Site Links & Resume      |  L  | 0.5 hrs  | 0.5 hrs |
+| Total                                |  H  | 13.5 hrs | 8 hrs   |
 #### PostMVP
 | Component                     | Priority | Estimated Time | Actual Time |
-| ---------------------------------- | :-: |  :-----: | :---: | 
-| 1C - Hamburger Animation & Design  |  H  | 1 hr     |
-| 2B - Color Lines Background        |  M  | 1.5 hrs  |
-| 3B - Icons for Tech                |  M  | 0.5 hrs  |
-| 4D - Hover and Click Animations    |  M  | 1 hr     |
+| ---------------------------------- | :-: |  :-----: | :-----: | 
+| 1C - Hamburger Animation & Design  |  H  | 1 hr     | 1 hr    |
+| 2B - Color Lines Background        |  M  | 1.5 hrs  | 1.5 hrs |
+| 3B - Icons for Tech                |  M  | 0.5 hrs  | 0.5 hrs |
+| 4D - Hover and Click Animations    |  M  | 1 hr     | 0.5 hrs |
 | 5 - Blog Section                   |  L  | 2 hrs    |
 | 5A - Design Summary Cards Container|  L  | 1 hr     |
 | 5B - Design Summary Cards          |  L  | 1 hr     |
 | 6B - Notification on Submit        |  H  | 1.5 hrs  |
-| 6C - Icon Links to Socials         |  H  | 0.5 hrs  |
+| 6C - Icon Links to Socials         |  H  | 0.5 hrs  | 0.5 hrs |
 | 7B - Footer Site Map               |  H  | 0.5 hrs  |
 | Total                              |  H  | 10.5 hrs | hrs |
 ## Additional Libraries
