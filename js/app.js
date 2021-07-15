@@ -7,15 +7,12 @@
 // ... and then a lot of that got scrapped for jQuery .slideToggle
 // https://api.jquery.com/slideToggle/
 
+// aaaaand then I refactored the entire thing down to the following:
+
 const toggleNav = $(`.fa-bars`).on(`click`, () => {
     const $NavLinks = $(`.nav-link-list`);
-    if ($NavLinks.css(`display`) !== `none`) {
-      $NavLinks.slideToggle(500)
-      // $NavLinks.css(`display`,`none`) 
-    } else {
         $NavLinks.slideToggle(500)
-        // $NavLinks.css(`display`,`block`)
-    }
+        $('.nav-link').children().on('click', () => $NavLinks.slideUp(500))
 })
 
 

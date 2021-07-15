@@ -77,17 +77,12 @@ Link To Site  | One Thing I'd Like To Incorporate |
  - jQuery
 	- interaction between JS and the DOM
 ## Code Snippet
-This section was revised maybe 3 different times as the functionality requirements changed. I wanted to avoid pulling in bootstrap for this one component, so I figured out how to make the toggleable nav myself! Commented out is the original display settings before the sliding nav menu was implemented. 
+This section was revised maybe 4 different times as the functionality requirements changed. I wanted to avoid pulling in bootstrap for this one component, so I figured out how to make the toggleable nav myself! It eventually was refactored into its final version. 
 ```js
 const toggleNav = $(`.fa-bars`).on(`click`, () => {
     const $NavLinks = $(`.nav-link-list`);
-    if ($NavLinks.css(`display`) !== `none`) {
-      $NavLinks.slideToggle(500)
-      // $NavLinks.css(`display`,`none`) 
-    } else {
         $NavLinks.slideToggle(500)
-        // $NavLinks.css(`display`,`block`)
-    }
+        $('.nav-link').children().on('click', () => $NavLinks.slideUp(500))
 })
 ```
 ## Issues and Resolutions
