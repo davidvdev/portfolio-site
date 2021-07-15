@@ -33,6 +33,10 @@ body {
     font-family: 'IBM Plex Sans', sans-serif;
     background-color: var(--primary-bg-color);
 }
+@keyframes h1Load {
+    0% { opacity: 0;}
+    100% { opacity: 1;}
+}
 h1 {
     font-weight: 600;
     margin: 0 auto;
@@ -40,6 +44,7 @@ h1 {
     font-size: 4em;
     background-color: var(--transparent-secondary-bg);
     border-radius: 5px 5px;
+    animation: 1s ease-in 0s 1 h1Load;
 }
 
 h2 {
@@ -380,6 +385,7 @@ footer .copyright {
     }
     #About h1 {
         align-self: end;
+        animation: none;
     }
     #About p {
         align-self: top;
@@ -439,6 +445,12 @@ footer .copyright {
     /* WORK */
     #Work .work-card-gallery{
         grid-template-columns: repeat(3, 1fr);
+    }
+    /* CONTACT */
+    #Contact a:hover{
+        /* text-shadow: var(--secondary-bg-color) 1px 0 20px; */
+        text-shadow: 0 0 5px var(--secondary-bg-color), .2em .2em  5px var(--secondary-bg-color), -.2em -.2em 5px var(--secondary-bg-color), -.2em .2em 5px var(--secondary-bg-color), .2em -.2em 5px var(--secondary-bg-color);
+        transition: all 0.2s;
     }
 }
 /* VERY BIG SCREEN */
