@@ -15,13 +15,6 @@ const toggleNav = $(`.fa-bars`).on(`click`, () => {
         $('.nav-link').children().on('click', () => $NavLinks.slideUp(500))
 })
 
-
-// Google Sheet API Call using jQuery
-// $.ajax("https://docs.google.com/spreadsheets/d/18t7o7jtwXsDRKUEUge9CFPbaVwezAvDzNQxUNaOM590/edit#gid=0")
-// .then((data) => {
-//     console.log(data);
-// })
-
 $.ajax("./json/projects.json")
 .then((data) => {
     data.forEach((project, index) => {
