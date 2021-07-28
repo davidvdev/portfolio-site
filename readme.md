@@ -8,8 +8,8 @@ You are **responsible** for scheduling time with your squad to seek approval for
 |Day 1| Wireframes / Priority Matrix / Timeline      | Complete   |
 |Day 3| Core Application Structure (HTML, CSS, etc.) | Complete   |
 |Day 4| MVP & Bug Fixes                              | Complete   |
-|Day 5| Final Touches                                | Incomplete |
-|Day 6| Present                                      | Incomplete |
+|Day 5| Final Touches                                | Complete   |
+|Day 6| Present                                      | Complete   |
 ## Project Description
 The goal of this project is to create a functional and professional portfolio website. The website will function as a space to showcase my work, highlight my skills, and provide an avenue of communication between interested parties and myself. 
 ## Portfolio I want to Emulate

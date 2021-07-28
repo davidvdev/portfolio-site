@@ -7,6 +7,13 @@
     "image": "../img/retro-rainbow.png"
   },
   {
+    "name": "React Pokedex",
+    "description":"This small site took a day to build and uses React as well as a couple of API calls to simulate a Pokedex of the original 151 Pokemon. Add Pokemon to your team and asemble your favorites in this one page app!",
+    "github": "https://github.com/davidvdev/react-pokedex",
+    "deployed": "https://react-pokedex-chi.vercel.app/",
+    "image": "../img/react-pokedex.png"
+  },
+  {
     "name": "Responsive Web Design Exercise",
     "description":"An exercise done in class to learn the finer points of responsive design using media queries alongside CSS Grid and Flexbox.",
     "github": "https://github.com/davidvdev/responsive-web-design-exercise",
