@@ -1,5 +1,12 @@
 [
   {
+    "name": "Fav Space",
+    "description":"A dummy social media-esque site that emulates a content focused feed. This site was built in React and leverages multiple API calls and only a few components that are dynamically rendered based on the data provided.",
+    "github": "https://github.com/davidvdev/dummy-website",
+    "deployed": "https://dummy-website-opal.vercel.app/",
+    "image": "../img/fav-space.png"
+  },
+  {
     "name": "Retro Rainbow",
     "description":"An experiment with Javscript, jQuery, and color combinations.",
     "github": "https://github.com/davidvdev/retro-rainbow",
