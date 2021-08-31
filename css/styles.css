@@ -44,7 +44,7 @@ h1 {
     font-size: 4em;
     background-color: var(--transparent-secondary-bg);
     border-radius: 5px 5px;
-    animation: 1s ease-in 0s 1 h1Load;
+    animation: .6s ease-in 0s 1 h1Load;
 }
 
 h2 {
@@ -101,11 +101,8 @@ section {
 }
 
 /* ABOUT STYLING */
-.mobile-space{
-    height: 40vh
-}
-
 #About {
+    margin-top: 36px;
     display: flex;
     flex-direction: column;
 }
@@ -115,6 +112,10 @@ img.about-me-img {
     max-width: 80vw;
     margin: 0 0 15px 0;
     align-self: center;
+    animation: 1s ease-in 0s 1 h1Load;
+}
+#About h1{
+    margin: 1em 0 1.5em 0;
 }
 
 #About p {
@@ -363,33 +364,22 @@ footer .copyright {
         background-color: var(--ac-color-4);
     }
     /* ABOUT */
-    .mobile-space{
-        display: none;
-    }
+
     #About {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 2fr 1fr;
+        display: flex;
+        flex-direction: row;
+        margin-top:80px;
     }
     #About img.about-me-img {
-        grid-column: 1 / 2;
-        grid-row: 2 / span 2;
-        width: 80%;
-        align-self: center;
-        justify-self: center;
-    }
-    #About h1, #About p {
-        height: fit-content;
-        text-align: left;
-        grid-column: 2 / 3;
-    }
-    #About h1 {
-        align-self: end;
+        max-width: 40%;
+        max-height: 400px;
+        margin: 1em;
+        align-self: flex-end;
         animation: none;
     }
-    #About p {
-        align-self: top;
-        grid-row: 2 / span 2;
+    #About h1 {
+        animation: none;
+        margin: 0;
     }
     /* TECH */
     #Tech ul {
@@ -438,6 +428,11 @@ footer .copyright {
         justify-self: end;
         margin-right: 50px;
     }
+    #About .about-me-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
     #About p {
         border-radius: 8px 4px;
         border : 1px solid var(--ac-color-0);
@@ -464,5 +459,8 @@ footer .copyright {
     header{
         height: 80px;
         padding: 0 20%;
+    }
+    #About .about-me-text{
+        justify-content: flex-start;
     }
 }
