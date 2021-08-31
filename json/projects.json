@@ -1,5 +1,12 @@
 [
   {
+    "name": "SWN Item Catalogue",
+    "description":"This fullstack MERN app was built over the course of 8 hours while learning fullstack development. It features full CRUD functionality and database hosting through MongoDB and Heroku.",
+    "github": "https://github.com/davidvdev/one-day-mern-frontend",
+    "deployed": "https://one-day-mern-frontend.vercel.app/",
+    "image": "../img/one-day-mern.png"
+  },
+  {
     "name": "Fav Space",
     "description":"A dummy social media-esque site that emulates a content focused feed. This site was built in React and leverages multiple API calls and only a few components that are dynamically rendered based on the data provided.",
     "github": "https://github.com/davidvdev/dummy-website",
@@ -21,18 +28,18 @@
     "image": "../img/react-pokedex.png"
   },
   {
+    "name": "AC Chill Time",
+    "description":"A fun website that I built for my brother. It simply tells you the time and plays the relevant Animal Crossing music on repeat for the hour.",
+    "github": "https://github.com/davidvdev/ac-chill-time",
+    "deployed": "https://ac-chill-time.vercel.app/",
+    "image": "../img/ac-chill.png"
+  },
+  {
     "name": "Retro Rainbow",
     "description":"An experiment with Javscript, jQuery, and color combinations.",
     "github": "https://github.com/davidvdev/retro-rainbow",
     "deployed": "https://retro-rainbow.vercel.app",
     "image": "../img/retro-rainbow.png"
-  },
-  {
-    "name": "Responsive Web Design Exercise",
-    "description":"An exercise done in class to learn the finer points of responsive design using media queries alongside CSS Grid and Flexbox.",
-    "github": "https://github.com/davidvdev/responsive-web-design-exercise",
-    "deployed": "https://responsive-web-design-exercise.vercel.app/",
-    "image": "../img/responsive-web-design-ex.png"
   },
   {
     "name": "Bootstrap Album Site",
