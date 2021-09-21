@@ -1,5 +1,12 @@
 [
   {
+    "name": "Session 0 RPG Group Finder",
+    "description":"Session 0 is a prototype social groups app that allows TTRPG players to find groups to join and run. The app is built with a FaunaDB database and a React frontend. Features include user authentication and relational data driven pages.",
+    "github": "https://github.com/davidvdev/session-0-frontend",
+    "deployed": "https://session-0-frontend-7bv133xj3-davidvdev.vercel.app/",
+    "image": "../img/session-0.png"
+  },
+  {
     "name": "SWN Item Catalogue",
     "description":"This fullstack MERN app was built over the course of 8 hours while learning fullstack development. It features full CRUD functionality and database hosting through MongoDB and Heroku.",
     "github": "https://github.com/davidvdev/one-day-mern-frontend",
@@ -42,10 +49,10 @@
     "image": "../img/retro-rainbow.png"
   },
   {
-    "name": "Bootstrap Album Site",
-    "description":"Practicing my Bootstrap skills by recreating this photo album landing page.",
-    "github": "https://github.com/davidvdev/intro-to-bootstrap-lab",
-    "deployed": "https://intro-to-bootstrap-lab.vercel.app/",
-    "image": "../img/bootstrap-lab.png"
+    "name": "Mapapalooza",
+    "description":"This full CRUD application leverages Django on the backend and React with HTML Canvas on the frontend to create an experimental random map/mosaic generator.",
+    "github": "https://github.com/davidvdev/django-miniproject-front",
+    "deployed": "https://django-miniproject-front.vercel.app/",
+    "image": "../img/mapapalooza.png"
   }
 ]
