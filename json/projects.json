@@ -4,7 +4,7 @@
     "description":"Session 0 is a prototype social groups app that allows TTRPG players to find groups to join and run. The app is built with a FaunaDB database and a React frontend. Features include user authentication and relational data driven pages.",
     "github": "https://github.com/davidvdev/session-0-frontend",
     "deployed": "https://session-0-frontend-7bv133xj3-davidvdev.vercel.app/",
-    "image": "../img/session-0.png"
+    "image": "../img/session-0.webp"
   },
   {
     "name": "SWN Item Catalogue",
@@ -18,7 +18,7 @@
     "description":"A dummy social media-esque site that emulates a content focused feed. This site was built in React and leverages multiple API calls and only a few components that are dynamically rendered based on the data provided.",
     "github": "https://github.com/davidvdev/dummy-website",
     "deployed": "https://dummy-website-opal.vercel.app/",
-    "image": "../img/fav-space.png"
+    "image": "../img/fav-space.webp"
   },
   {
     "name": "Plantie",
@@ -39,14 +39,14 @@
     "description":"A fun website that I built for my brother. It simply tells you the time and plays the relevant Animal Crossing music on repeat for the hour.",
     "github": "https://github.com/davidvdev/ac-chill-time",
     "deployed": "https://ac-chill-time.vercel.app/",
-    "image": "../img/ac-chill.png"
+    "image": "../img/ac-chill.webp"
   },
   {
     "name": "Retro Rainbow",
     "description":"An experiment with Javscript, jQuery, and color combinations.",
     "github": "https://github.com/davidvdev/retro-rainbow",
     "deployed": "https://retro-rainbow.vercel.app",
-    "image": "../img/retro-rainbow.png"
+    "image": "../img/retro-rainbow.webp"
   },
   {
     "name": "Mapapalooza",
