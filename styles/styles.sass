@@ -1,0 +1,465 @@
+
+// /* * 
+//     border: 1px solid teal !important
+//  */
+
+// /* Color Variables */
+// :root 
+//     --main-bg-color: #FFFFFF
+//     --secondary-bg-color: #C2C1BD
+//     /* --transparent-secondary-bg: rgba(194, 193, 189, 0.6) */
+//     /* --transparent-secondary-bg: white */
+//     --ac-color-0: #5D594F
+//     --ac-color-1: #D12625
+//     --ac-color-2: #DA6241
+//     --ac-color-3: #F1CB29
+//     --ac-color-4: #4BB249
+//     --ac-color-5: #009EDA
+
+// /* GENERAL PAGE STYLING */
+// html 
+//     scroll-behavior: smooth
+//     background-image: url("../img/c64-double.svg")
+//     background-color: var(--secondary-bg-color)
+//     background-position:top center
+    
+
+// header, footer 
+//     background-color: var(--ac-color-0)
+//     color: white
+
+
+// body 
+//     font-family: 'IBM Plex Sans', sans-serif
+//     background-color: var(--primary-bg-color)
+
+// @keyframes h1Load 
+//     0%  opacity: 0
+//     100%  opacity: 1
+
+// h1 
+//     font-weight: 600
+//     margin: 0 auto
+//     text-align: center
+//     font-size: 4em
+//     background-color: var(--transparent-secondary-bg)
+//     border-radius: 5px 5px
+//     animation: .6s ease-in 0s 1 h1Load
+
+
+// h2 
+//     font-weight: 600
+//     text-transform: uppercase
+//     letter-spacing: 0.1em
+//     font-size: 2.5em
+//     width: fit-content
+//     padding: 8px
+//     margin: 0 auto
+//     background-color: var(--transparent-secondary-bg)
+//     border-radius: 5px 5px
+
+
+// a 
+//     text-decoration: none
+//     color: inherit
+
+
+// /* HEADER & NAV STYLING */
+// header 
+//     font-size: 1.4em
+//     display: flex
+//     justify-content: space-between
+//     align-items: center
+//     height: 75px
+//     padding: 0 8px
+
+// header i.fas:active 
+//     color: var(--ac-color-2)
+ 
+
+// nav ul 
+//     display: none
+//     background-color: var(--ac-color-0)
+//     flex-direction: column
+//     position: absolute
+//     padding: 5px 0 0 0
+//     border-radius: 0 0 0 8px
+//     top: 70px
+//     right: 0
+
+
+// nav ul li a 
+//     display: block
+//     padding: 8px
+
+// nav ul li a:active 
+//     background-color: var(--ac-color-5)
+
+
+// section 
+//     padding-bottom: 80px
+
+
+// /* ABOUT STYLING */
+// #About 
+//     margin-top: 36px
+//     display: flex
+//     flex-direction: column
+
+// img.about-me-img 
+//     border: 8px solid var(--ac-color-3)
+//     border-radius:90px 12px
+//     max-width: 80vw
+//     margin: 0 0 15px 0
+//     align-self: center
+//     animation: 1s ease-in 0s 1 h1Load
+
+// #About h1
+//     margin: 1em 0 1.5em 0
+
+
+// #About p 
+//     font-size: 1.2em
+//     line-height: 1.3em
+//     padding: 12px
+//     margin: 8px 0 8px 8px
+//     background-color: var(--main-bg-color)
+//     border-radius: 8px 0 0 4px
+//     border : 1px solid var(--ac-color-0)
+//     border-right: none
+
+
+// /* TECH STYLING */
+// .tech ul 
+//     display: grid
+//     grid-template-columns: 1fr 1fr
+//     justify-items: center
+//     margin: 25px 12px
+//     background-color: var(--transparent-secondary-bg)
+//     border-radius: 5px
+
+
+// .tech ul li 
+//     padding: 6px
+//     font-size: 1.2em
+
+
+// .really-no-icon-why 
+//     height: 1em
+//     vertical-align: bottom
+
+
+// /* WORK STYLING */
+// .work-card-gallery 
+//     margin-top: 25px
+//     display: grid
+//     grid-template-columns: repeat(1, 1fr)
+
+// .work-card
+//     display: flex
+//     flex-direction: column
+//     justify-content: space-between
+//     width: 90%
+//     border-radius: 12px
+//     margin: 5px auto 20px auto
+//     border:1px solid var(--ac-color-0)
+//     background-color: var(--main-bg-color)
+//     transition: all 0.3s
+
+
+// .work-card:hover 
+//     transform: scale(1.02)
+
+
+// .work-card img 
+//     border-radius: 9px 9px 0 0 
+//     object-fit: cover
+//     width: 100%
+
+
+// .work-card h3 
+//     font-weight: bold
+//     padding-bottom: 0.5em
+
+
+// .work-card .card-text 
+//     padding: 5px 12px 30px 12px
+
+
+// .work-card .card-button-group 
+//     display: flex
+//     justify-content: space-around
+//     align-content: flex-end
+//     padding: 8px
+
+
+// .work-card a 
+//     background-color: var(--ac-color-0)
+//     color: var(--main-bg-color)
+//     display: flex
+//     justify-content: center
+//     align-items: center
+//     width: 30%
+//     height: 30px
+//     border-radius: 3px
+
+
+// .work-card a:hover, .contact-form button:hover
+//     background-color: var(--ac-color-5)
+
+
+// .work-card a:active, .contact-form button:active
+//     background-color: var(--ac-color-4)
+//     border-radius: 7px
+
+
+// /* CONTACT & SOCIAL LINKS STYLING */
+// .contact 
+//     display: grid
+//     grid-template-columns: 3fr 2fr
+//     grid-template-rows: 1fr 3fr
+
+
+// .contact h2 
+//     margin-top: 40px
+//     padding:0 8px
+//     height: fit-content
+//     grid-row: 1 / 2
+//     grid-column: 1 / span 2
+
+// .contact-form
+//     display: flex
+//     justify-content: center
+//     padding: 10px
+
+// .contact-form form
+//     display: flex
+//     flex-direction: column
+//     width: 95%
+
+// label 
+//     background-color: var(--transparent-secondary-bg)
+//     border-radius: 5px 5px
+//     width: fit-content
+
+
+// input, textarea, label, button 
+//     font-family: inherit
+//     padding: 2px
+//     margin: 2px
+
+
+// input, textarea 
+//     border: 1px solid var(--secondary-bg-color)
+//     border-radius: 3px
+
+
+// input 
+//     width: 70%
+
+
+// #Contact
+//     padding-bottom: 0
+
+
+// .contact-form button
+//     margin-top: 20px
+//     background-color: var(--ac-color-0)
+//     color: var(--main-bg-color)
+//     border: none
+//     border-radius: 3px
+
+
+// .contact-social-links 
+//     display: flex
+//     align-items: center
+
+
+// .contact-social-links ul 
+//     background-color: var(--transparent-secondary-bg)
+//     border-radius: 4px
+
+
+// .contact-social-links ul li 
+//     padding: 4px
+//     font-size: 0.9em
+
+// .contact-social-links ul i 
+//     margin-right: 3px
+
+// .contact-social-links a:hover, footer a:hover 
+//     color: var(--ac-color-2)
+
+
+// /* FOOTER STYLING */
+// footer 
+//     height: 60px
+//     display: grid
+//     grid-template-rows: 1fr 1fr
+//     grid-template-columns: 1fr 1fr
+
+// footer .sitemap,footer .site-links
+//     margin: 5px
+//     font-size: 0.9em
+
+
+// footer .sitemap 
+//     grid-column: 1 / 2
+
+
+// footer .site-links
+//     grid-column: 2 / 3
+
+
+// footer .copyright 
+//     margin: 2px 2px 6px 2px
+//     font-size: 1em
+//     grid-column: 1 / span 2
+//     grid-row: 2 / 3
+//     text-align: center
+//     align-self: end
+
+
+// /* RESPONSIVE DESIGN BREAKPOINTS */
+// /* TABLET */
+// @media screen and (min-width: 768px)
+//     html 
+//         background-position: top
+    
+//     main 
+//         margin: 30px auto
+    
+//     /* HEADER & NAV */
+//     header i.fas 
+//         display: none
+    
+//     nav 
+//         height: inherit
+    
+//     nav ul 
+//         height: inherit
+//         align-items: center
+//         position:relative
+//         display: flex
+//         flex-direction: row
+//         padding: 0
+//         top: 0
+    
+//     nav ul li 
+//         height: 100%
+//         display: flex
+//         align-items: center
+    
+//     nav ul li a
+//         height: inherit
+//         width: inherit
+//         display: flex
+//         align-items: center
+//         padding: 0 12px
+    
+//     nav ul li a:hover
+//         background-color: var(--ac-color-5)
+    
+//     nav ul li a:active
+//         background-color: var(--ac-color-4)
+    
+//     /* ABOUT */
+
+//     #About 
+//         display: flex
+//         flex-direction: row
+//         margin-top:80px
+    
+//     #About img.about-me-img 
+//         max-width: 40%
+//         max-height: 400px
+//         margin: 1em
+//         align-self: flex-end
+//         animation: none
+    
+//     #About h1 
+//         animation: none
+//         margin: 0
+    
+//     /* TECH */
+//     #Tech ul 
+//         grid-template-columns: repeat(5, 1fr)
+    
+//     #Tech ul li 
+//         font-size: 1.2em
+//         padding: 16px 8px
+    
+//     /* WORK */
+//     #Work .work-card-gallery
+//         grid-template-columns: repeat(2, 1fr)
+    
+//     /* CONTACT */
+//     #Contact 
+//         grid-template-rows: 1fr 3fr 1fr
+    
+//     #Contact form 
+//         max-width: 350px
+    
+//     #Contact .contact-social-links
+//         grid-row: 3 / 4
+//         grid-column: 1 / 3
+//         justify-content: center
+    
+//     #Contact .contact-social-links ul
+//         display: flex
+    
+//     #Contact .contact-social-links li 
+//         padding: 12px
+    
+  
+
+// /* LAPTOP + */
+// @media screen and (min-width: 1024px)
+//     /* HEADER */
+//     header 
+//         height: 40px
+    
+//     /* ABOUT */
+//     #About
+//         margin-top: 75px
+    
+//     #About img.about-me-img 
+//         max-width: 55%
+//         justify-self: end
+//         margin-right: 50px
+    
+//     #About .about-me-text
+//         display: flex
+//         flex-direction: column
+//         justify-content: space-evenly
+    
+//     #About p 
+//         border-radius: 8px 4px
+//         border : 1px solid var(--ac-color-0)
+    
+//     /* WORK */
+//     #Work .work-card-gallery
+//         grid-template-columns: repeat(3, 1fr)
+    
+//     /* CONTACT */
+//     #Contact a:hover
+//         /* text-shadow: var(--secondary-bg-color) 1px 0 20px */
+//         text-shadow: 0 0 5px var(--secondary-bg-color), .2em .2em  5px var(--secondary-bg-color), -.2em -.2em 5px var(--secondary-bg-color), -.2em .2em 5px var(--secondary-bg-color), .2em -.2em 5px var(--secondary-bg-color)
+//         transition: all 0.2s
+    
+
+// /* VERY BIG SCREEN */
+// @media screen and (min-width: 1920px)
+//     html
+//         background-size: cover
+    
+//     main
+//         width: 60%
+    
+//     header
+//         height: 80px
+//         padding: 0 20%
+    
+//     #About .about-me-text
+//         justify-content: flex-start
+    
