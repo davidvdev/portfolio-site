@@ -6,7 +6,7 @@ const Footer = () => {
 
     return(
         <footer>
-            <p>(C) David Vogel | Site made by David Vogel | <a href={repo} target="_blank">See the repo!</a></p>
+            <p>(C) David Vogel | Site made by David Vogel | <a href={repo} target="_blank" rel="noreferrer">See the repo!</a></p>
         </footer>
     )
 }
