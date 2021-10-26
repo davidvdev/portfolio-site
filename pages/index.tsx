@@ -8,7 +8,10 @@ import techData from '../json/tech.json'
 import projectData from '../json/projects.json'
 import headshot from '../img/david.jpg'
 const repo = "https://github.com/davidvdev/portfolio-site"
-const resume = ""
+const resume = "https://drive.google.com/file/d/1mtYv0woUhpOGFzAL_LjVFWKdPRkR-2ek/view?usp=sharing"
+const linkedIn = "https://www.linkedin.com/in/davidvdev"
+const github = "https://github.com/davidvdev"
+const email = "david@davidvdev.com"
 
 // Components 
 import Tech from '../components/tech'
@@ -59,27 +62,55 @@ const Home: NextPage = () => {
       </header>
       <main>
         <div className={styles.about}>
-            <Image className={styles.headshot} src={headshot} alt="David Vogel portrait" width={400} height={400} />
-            <div className={styles.aboutText}>
-                <h2 id="about">Hello!</h2>
-                <p>
-                My name is David Vogel, and ​​I am a fullstack software developer from Minneapolis, Minnesota with a driving motivation to help others solve problems and find joy using tech. Technology is innately human centric, and my background in literature, writing, retail, and training let me see the opportunities available for technology to assist us in bridging divides between people, cultures, and ideologies. I see empathy as a core human need, and my aim is to design software that recognizes humanity in all of us.
-                </p>
-            </div>
+          <div className={styles.headshot} >
+              <Image src={headshot} alt="David Vogel portrait" height={400} width={400} />
+          </div>
+          <div className={styles.aboutText}>
+              <h2 id="about">Hello!</h2>
+              <p>
+              My name is David Vogel, and ​​I am a fullstack software developer from Minneapolis, Minnesota with a driving motivation to help others solve problems and find joy using tech. Technology is innately human centric, and my background in literature, writing, retail, and training let me see the opportunities available for technology to assist us in bridging divides between people, cultures, and ideologies. I see empathy as a core human need, and my aim is to design software that recognizes humanity in all of us.
+              </p>
+          </div>
         </div>
         <div className={styles.tech}>
           <h2 id="tech">Tech</h2>
           <ul>
             {techData.sort((a,b) => a.name.localeCompare(b.name)).map(item => {
               return(
-                <li>{item.name}</li>
+                <li key={techData.indexOf(item)}>{item.name}</li>
               )
             })}
             </ul>
         </div>
-        <Projects />
+        <div className={styles.work}>
+          <h2 id="work">Work</h2>
+          <div className={styles.showcase}>
+            {projectData.map(project => {
+              return(
+                <div className={styles.card}>
+                  {/* <Image src={project.image} width={100} height={200}/> */}
+                  <div className={styles.projtext}>
+                    <h3>{project.name}</h3>
+                    <p>{project.description}</p>
+                  </div>
+                  <div className={styles.projbuttons}>
+                    <a href={project.github} target="_blank" rel="noreferrer">Code</a>
+                    <a href={project.deployed} target="_blank" rel="noreferrer">Live</a>
+                    <a href={`mailto:${email}?subject=${project.name.replaceAll(" ","%20")}`} target="_blank" rel="noreferrer">Ask Me</a>
+                  </div>
+                </div>
+              )
+            })}
+          </div>
+        </div>
         <div className={styles.contact}>
             <h2 id="contact">Contact</h2>
+            <h4>Let's talk! Feel free to reach out to me through any of the following methods.</h4>
+            <ul>
+              <li><a href={github} target="_blank" rel="noreferrer">Github</a></li>
+              <li><a href={linkedIn} target="_blank" rel="noreferrer">LinkedIn</a></li>
+              <li><a href={email} target="_blank" rel="noreferrer">Email</a></li>
+            </ul>
         </div>
       </main>
       <footer className={styles.footer}>

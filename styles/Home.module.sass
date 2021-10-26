@@ -26,11 +26,12 @@ $color-accent-5: #009EDA
 .about
   display: flex
   justify-content: space-between
-  // height: 400px
+  height: 400px
 
-  // .headshot 
-  //   max-width: 55%
-  //   max-height: 400px
+  .headshot 
+    border: 8px solid $color-accent-3
+    border-radius: 90px 16px
+    
 
   .aboutText
       max-width: 55%
@@ -47,6 +48,27 @@ $color-accent-5: #009EDA
       padding: 3px 3em
       width: 15em
 
+.work
+
+  .showcase
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+
+    .card
+      display: flex
+      flex-direction: column
+      margin: 1em
+      width: 250px
+      border: 1px solid $dark-accent
+      border-radius: 16px
+
+      // .projtext
+
+      .projbuttons
+        display: flex
+        justify-content: space-around
+        justify-self: flex-end
   // .container 
 //   min-height: 100vh
 //   padding: 0 0.5rem
