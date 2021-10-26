@@ -1,6 +1,11 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 
-const Tech = () => {
+type Props = {
+    name: string
+    img: string
+}
+
+const Tech: FunctionComponent<Props> = () => {
     return(
         <div>
             <h2>Tech</h2>
