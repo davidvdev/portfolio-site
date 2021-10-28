@@ -13,10 +13,8 @@ const linkedIn = "https://www.linkedin.com/in/davidvdev"
 const github = "https://github.com/davidvdev"
 const email = "david@davidvdev.com"
 
-// Components 
-import Tech from '../components/tech'
-import Projects from '../components/projects'
-import Footer from '../components/footer'
+// Icons
+import { BsGithub, BsEnvelopeFill, BsLinkedin } from 'react-icons/bs'
 
 // Interfaces
 interface techData {
@@ -107,9 +105,21 @@ const Home: NextPage = () => {
             <h2 id="contact">Contact</h2>
             <h4>Let's talk! Feel free to reach out to me through any of the following methods.</h4>
             <ul>
-              <li><a href={github} target="_blank" rel="noreferrer">Github</a></li>
-              <li><a href={linkedIn} target="_blank" rel="noreferrer">LinkedIn</a></li>
-              <li><a href={email} target="_blank" rel="noreferrer">Email</a></li>
+              <li>
+                <a href={github} target="_blank" rel="noreferrer">
+                  <BsGithub />
+                </a>
+              </li>
+              <li>
+                <a href={linkedIn} target="_blank" rel="noreferrer">
+                  <BsLinkedin />
+                </a>
+              </li>
+              <li>
+                <a href={`mailto:${email}`} target="_blank" rel="noreferrer">
+                  <BsEnvelopeFill />
+                </a>
+              </li>
             </ul>
         </div>
       </main>
