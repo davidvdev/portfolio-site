@@ -63,7 +63,7 @@ const Home: NextPage = () => {
       <main>
         <div className={styles.about}>
           <div className={styles.headshot} >
-              <img src='/../img/david.jpg' alt="David Vogel portrait" height={400} width={400} />
+              {/* <img src='/../img/david.jpg' alt="David Vogel portrait" height={400} width={400} /> */}
           </div>
           <div className={styles.aboutText}>
               <h2 id="about">Hello!</h2>
