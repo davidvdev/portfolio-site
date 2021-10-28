@@ -96,6 +96,7 @@ $color-accent-5: #009EDA
     .card
       display: flex
       flex-direction: column
+      justify-content: space-between
       margin: 1em
       // change width for larger screens
       width: 98%
@@ -104,11 +105,15 @@ $color-accent-5: #009EDA
       border-radius: 16px
       overflow: hidden
       background-color: $white
+      .projtext
+        justify-self: flex-start
+        padding: 3px 0.5em
       .projbuttons
         display: flex
         justify-content: space-between
         justify-self: flex-end
         align-items: center
+        padding: 0.5em 0.5em
 
         a
           color: $white
@@ -122,11 +127,6 @@ $color-accent-5: #009EDA
         :active
           background-color: $color-accent-4
           border-radius: 6px
-
-    .lowerCard
-      padding: 0 1em 1em 1em
-      disply: flex
-      justify-content: space-between
 
 .contact
   ul
@@ -158,3 +158,19 @@ $color-accent-5: #009EDA
   align-items: center
   color: $white
   background-color: $dark-accent
+
+// Media Queries
+@media screen and (min-width: 425px) //TABLET
+.aboutText
+  width: 75%
+
+.tech ul li
+  width: 30%
+
+.card
+  max-width: 45%
+
+@media screen and (min-width: 768px) //LAPTOP
+
+
+@media screen and (min-width: 1440px) //BIG SCREEN
