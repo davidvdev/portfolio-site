@@ -8,49 +8,86 @@ $color-accent-3: #F1CB29
 $color-accent-4: #4BB249
 $color-accent-5: #009EDA
 
+// Toggled Styling
+.active
+  visibility: visible
+  z-index: 1
+  opacity: 1
+
+.inactive
+  visibility: collapse
+  opacity: 0
+  z-index: 1
+
+// Regular Styling 
 .header
   display: flex
   justify-content: space-between
   align-items: center
+  padding: 0.5em
   background-color: $dark-accent
   color: $white
   
   nav 
     min-width: 30%
+    justify-content: flex-end
+    transition: all 0.25s
 
-  nav ul
-    display: flex
-    justify-content: space-around
-    height: inherit
+    ul
+      background-color: $dark-accent
+      position: absolute
+      z-index: 1
+      top: 0
+      right: 0
+      display: flex
+      flex-direction: column
+      justify-content: space-around
+      padding: 2em 0 
+
+      li
+        text-align: right
+        padding: 0.5em 1em
+        width: 100%
+        
+      :hover
+        background-color: $color-accent-5
+        color: $white
 
 .about
+  margin: 2em 0 0 0
   display: flex
+  // change direction for larger display
+  flex-direction: column
+  // 
   justify-content: space-between
-  height: 400px
-
-  .headshot 
-    border: 8px solid $color-accent-3
+  align-items: center
+  .headshotContainer
+    overflow: hidden
     border-radius: 90px 16px
-    
-
-  .aboutText
-      max-width: 55%
+    border: 8px solid $color-accent-3
+    background-color: $color-accent-3
+  .aboutText p
+    // margin: 0 -2%
+    padding: 1em 0.75em
+    border-radius: 16px 60px 
+    text-align: center
+    background-color: $white
 
 .tech
-  text-align: center
-
   ul
     display: flex
-    justify-content: space-evenly
+    justify-content: center
     flex-wrap: wrap
 
     li
-      padding: 3px 3em
-      width: 15em
+      display: flex
+      align-items: center
+      justify-content: center
+      padding: 0.25em 0em
+      width: 50%
       font-size: 1.2em
 
 .work
-
   .showcase
     display: flex
     justify-content: space-around
@@ -60,32 +97,62 @@ $color-accent-5: #009EDA
       display: flex
       flex-direction: column
       margin: 1em
-      width: 250px
+      // change width for larger screens
+      width: 98%
+      // 
       border: 1px solid $dark-accent
       border-radius: 16px
-
+      overflow: hidden
+      background-color: $white
       .projbuttons
         display: flex
-        justify-content: space-around
+        justify-content: space-between
         justify-self: flex-end
+
+        a
+          color: $white
+          background-color: $dark-accent
+          padding: 0.5em 1em
+          width: 31%
+          text-align: center
+          border-radius: 3px
+        :hover
+          background-color: $color-accent-5
+        :active
+          background-color: $color-accent-4
+          border-radius: 6px
+
+    .lowerCard
+      padding: 0 1em 1em 1em
+      disply: flex
+      justify-content: space-between
 
 .contact
   ul
     display: flex
     align-items: center
     justify-content: center
+    margin-bottom: 2em
 
     li
-      text-align: center
-      font-size: 2em
-      align-items: baseline
-      paddding: 2em
-      margin: 1em
+      font-size: 3em
+      display: flex
+      align-items: center
+      background-color: $light-accent
+      border-radius: 9px
+      
+    a
+      display: inline-block
+      padding: 0.5em
+    :hover
+      background-color: $color-accent-3
+
 
 .footer 
-
-  height: 2em
+  height: fit-content
+  padding: 1em 0
   display: flex
+  text-align: center
   justify-content: center
   align-items: center
   color: $white

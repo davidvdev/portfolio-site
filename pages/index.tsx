@@ -1,4 +1,5 @@
 import type { NextPage } from 'next'
+import { useState, useRef } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.sass'
@@ -15,9 +16,10 @@ const email = "david@davidvdev.com"
 
 // Icons
 import { BsGithub, BsEnvelopeFill, BsLinkedin, BsBootstrapFill, BsCodeSlash } from 'react-icons/bs'
-import { FaGitAlt, FaHtml5, FaCss3Alt, FaJs, FaSass, FaReact, FaNodeJs } from 'react-icons/fa'
+import { FaGitAlt, FaHtml5, FaCss3Alt, FaJs, FaSass, FaReact, FaNodeJs, FaBars } from 'react-icons/fa'
 import { SiSvelte, SiJquery, SiMarkdown, SiExpress, SiMongodb, SiPython, SiDjango, SiFastapi, SiFlask, SiRubyonrails, SiTypescript, SiPostgresql } from 'react-icons/si'
 import { DiRuby } from 'react-icons/di'
+import { MdClose } from 'react-icons/md'
 
 const icons = [
   BsGithub,
@@ -60,11 +62,15 @@ interface projectData {
   image: string
 }
 
-
-
 const Home: NextPage = () => {
+  
+  const dropdownRef = useRef(null)
 
-  // console.log(techData)
+  const [isNavActive, setIsNavActive] = useState(false)
+
+  const toggleNav = () => setIsNavActive(!isNavActive)
+
+  console.log(isNavActive)
 
   return (
     <div className={styles.container}>
@@ -80,19 +86,30 @@ const Home: NextPage = () => {
 
       <header className={styles.header}>
         <h1>David Vogel</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#tech">Tech</a></li>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
+        <nav className={isNavActive ? styles.active : styles.inactive}>
+          <ul>
+              <li><MdClose 
+                onClick={() => toggleNav()} 
+                style={{fontSize: '1.5em'}}
+              /></li>
+              <a href="#about" onClick={() => toggleNav()}><li>About</li></a>
+              <a href="#tech" onClick={() => toggleNav()}><li>Tech</li></a>
+              <a href="#work" onClick={() => toggleNav()}><li>Work</li></a>
+              <a href="#contact" onClick={() => toggleNav()}><li>Contact</li></a>
+          </ul>
         </nav>
+        <FaBars onClick={() => toggleNav()} style={{fontSize: '1.5em'}}/>
       </header>
       <main>
         <div className={styles.about}>
-          <div className={styles.headshot} >
-              {/* <img src='/../img/david.jpg' alt="David Vogel portrait" height={400} width={400} /> */}
+          <div className={styles.headshotContainer}>
+            <Image 
+              src='https://i.imgur.com/T6kqhid.jpg' 
+              alt="David Vogel portrait" 
+              className={styles.headshot}
+              height={350} 
+              width={350} 
+            />
           </div>
           <div className={styles.aboutText}>
               <h2 id="about">Hello!</h2>
@@ -122,15 +139,22 @@ const Home: NextPage = () => {
             {projectData.map(project => {
               return(
                 <div className={styles.card}>
-                  {/* <Image src={project.image} width={100} height={200}/> */}
-                  <div className={styles.projtext}>
-                    <h3>{project.name}</h3>
-                    <p>{project.description}</p>
-                  </div>
-                  <div className={styles.projbuttons}>
-                    <a href={project.github} target="_blank" rel="noreferrer">Code</a>
-                    <a href={project.deployed} target="_blank" rel="noreferrer">Live</a>
-                    <a href={`mailto:${email}?subject=${project.name.replaceAll(" ","%20")}`} target="_blank" rel="noreferrer">Ask Me</a>
+                  <Image 
+                    src={project.image} 
+                    className={styles.cardImage}
+                    width={400} 
+                    height={260}
+                  />
+                  <div className={styles.lowerCard}>
+                    <div className={styles.projtext}>
+                      <h3>{project.name}</h3>
+                      <p>{project.description}</p>
+                    </div>
+                    <div className={styles.projbuttons}>
+                      <a href={project.github} target="_blank" rel="noreferrer">Code</a>
+                      <a href={project.deployed} target="_blank" rel="noreferrer">Live</a>
+                      <a href={`mailto:${email}?subject=${project.name.replaceAll(" ","%20")}`} target="_blank" rel="noreferrer">Ask Me</a>
+                    </div>
                   </div>
                 </div>
               )
@@ -160,7 +184,7 @@ const Home: NextPage = () => {
         </div>
       </main>
       <footer className={styles.footer}>
-            <span>©David Vogel | Site made by David Vogel | <a href={repo} target="_blank" rel="noreferrer">See the repo!</a></span>
+            <span>©David Vogel | <a href={repo} target="_blank" rel="noreferrer">See the repo!</a></span>
       </footer>
     </div>
   )
