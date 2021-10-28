@@ -160,17 +160,22 @@ $color-accent-5: #009EDA
   background-color: $dark-accent
 
 // Media Queries
-@media screen and (min-width: 425px) //TABLET
-.aboutText
-  width: 75%
+@media screen and (min-width: 426px) //TABLET
+  .aboutText
+    width: 75%
 
-.tech ul li
-  width: 30%
+  .tech ul li
+    width: 30%
 
-.card
-  max-width: 45%
+  .card
+    max-width: 45%
 
-@media screen and (min-width: 768px) //LAPTOP
-
+@media screen and (min-width: 769px) //LAPTOP
+  .about
+    flex-direction: row
+    .aboutText
+      width: 55%
+  .tech ul li
+    width: 25%
 
 @media screen and (min-width: 1440px) //BIG SCREEN
