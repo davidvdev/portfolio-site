@@ -14,7 +14,38 @@ const github = "https://github.com/davidvdev"
 const email = "david@davidvdev.com"
 
 // Icons
-import { BsGithub, BsEnvelopeFill, BsLinkedin } from 'react-icons/bs'
+import { BsGithub, BsEnvelopeFill, BsLinkedin, BsBootstrapFill, BsCodeSlash } from 'react-icons/bs'
+import { FaGitAlt, FaHtml5, FaCss3Alt, FaJs, FaSass, FaReact, FaNodeJs } from 'react-icons/fa'
+import { SiSvelte, SiJquery, SiMarkdown, SiExpress, SiMongodb, SiPython, SiDjango, SiFastapi, SiFlask, SiRubyonrails, SiTypescript, SiPostgresql } from 'react-icons/si'
+import { DiRuby } from 'react-icons/di'
+
+const icons = [
+  BsGithub,
+  BsEnvelopeFill,
+  BsLinkedin,
+  FaGitAlt,
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaSass,
+  BsBootstrapFill,
+  FaReact,
+  SiSvelte,
+  SiJquery, 
+  SiMarkdown,
+  FaNodeJs,
+  SiExpress,
+  SiMongodb,
+  BsCodeSlash,
+  SiPython,
+  SiDjango,
+  SiFastapi,
+  SiFlask,
+  SiRubyonrails,
+  DiRuby,
+  SiTypescript,
+  SiPostgresql
+]
 
 // Interfaces
 interface techData {
@@ -74,8 +105,13 @@ const Home: NextPage = () => {
           <h2 id="tech">Tech</h2>
           <ul>
             {techData.sort((a,b) => a.name.localeCompare(b.name)).map(item => {
+              const Icon = icons.find(icon => icon.name === item.img)
               return(
-                <li key={techData.indexOf(item)}>{item.name}</li>
+                <li key={techData.indexOf(item)}>
+                  {/* @ts-ignore */}
+                  <Icon />
+                  <span> {item.name}</span>
+                </li>
               )
             })}
             </ul>

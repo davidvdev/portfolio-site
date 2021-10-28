@@ -1,98 +1,98 @@
 [
     {
         "name":"Github",
-        "img":""
+        "img":"BsGithub"
     },
     {
         "name":"Git",
-        "img":""
+        "img":"FaGitAlt"
     },
     {
         "name":"HTML",
-        "img":""
+        "img":"FaHtml5"
     },
     {
         "name":"CSS",
-        "img":""
+        "img":"FaCss3Alt"
     },
     {
         "name":"JavaScript",
-        "img":""
+        "img":"FaJs"
     },
     {
         "name":"Sass/SCSS",
-        "img":""
+        "img":"FaSass"
     },
     {
         "name":"Bootstrap",
-        "img":""
+        "img":"BsBootstrapFill"
     },
     {
         "name":"React",
-        "img":""
+        "img":"FaReact"
     },
     {
         "name":"Svelte",
-        "img":""
+        "img":"SiSvelte"
     },
     {
         "name":"jQuery",
-        "img":""
+        "img":"SiJquery"
     },
     {
         "name":"Markdown",
-        "img":""
+        "img":"SiMarkdown"
     },
     {
         "name":"Node",
-        "img":""
+        "img":"FaNodeJs"
     },
     {
         "name":"Express",
-        "img":""
+        "img":"SiExpress"
     },
     {
         "name":"MongoDB",
-        "img":""
+        "img":"SiMongodb"
     },
     {
         "name":"Mongoose",
-        "img":""
+        "img":"BsCodeSlash"
     },
     {
         "name":"Python",
-        "img":""
+        "img":"SiPython"
     },
     {
         "name":"Django",
-        "img":""
+        "img":"SiDjango"
     },
     {
         "name":"FastAPI",
-        "img":""
+        "img":"SiFastapi"
     },
     {
         "name":"FlaskAPI",
-        "img":""
+        "img":"SiFlask"
     },
     {
         "name":"Ruby",
-        "img":""
+        "img":"DiRuby"
     },
     {
         "name":"Ruby on Rails",
-        "img":""
+        "img":"SiRubyonrails"
     },
     {
         "name":"TypeScript",
-        "img":""
+        "img":"SiTypescript"
     },
     {
         "name":"FaunaDB",
-        "img":""
+        "img":"BsCodeSlash"
     },
     {
         "name":"PostgreSQL",
-        "img":""
+        "img":"SiPostgresql"
     }
-]
+]  
