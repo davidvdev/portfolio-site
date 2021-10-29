@@ -151,7 +151,7 @@ const Home: NextPage = () => {
                     <div className={styles.projbuttons}>
                       <a href={project.github} target="_blank" rel="noreferrer">Code</a>
                       <a href={project.deployed} target="_blank" rel="noreferrer">Live</a>
-                      <a href={`mailto:${email}?subject=${project.name.replaceAll(" ","%20")}`} target="_blank" rel="noreferrer">Ask</a>
+                      <a href={`mailto:${email}?subject=${project.name.replace(/ /g,"%20")}`} target="_blank" rel="noreferrer">Ask</a>
                     </div>
                 </div>
               )
