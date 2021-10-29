@@ -3,6 +3,7 @@ import { useState} from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.sass'
+import MyDocument from './_document'
 
 // Data
 import techData from '../json/tech.json'
@@ -159,7 +160,7 @@ const Home: NextPage = () => {
         </div>
         <div className={styles.contact}>
             <h2 id="contact">Contact</h2>
-            <h4>Let's talk! Feel free to reach out to me through any of the following methods.</h4>
+            <h4>Let&apos;s talk! Feel free to reach out to me through any of the following methods.</h4>
             <ul>
               <li>
                 <a href={github} target="_blank" rel="noreferrer">
