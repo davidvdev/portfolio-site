@@ -152,7 +152,9 @@ $color-accent-5: #009EDA
       display: inline-block
       padding: 0.5em
     :hover
-      background-color: $color-accent-3
+      color: $color-accent-3
+    :active
+      color: $color-accent-1
 
 
 .footer 
@@ -164,6 +166,10 @@ $color-accent-5: #009EDA
   align-items: center
   color: $white
   background-color: $dark-accent
+  a:hover
+    color: $color-accent-1
+  a:active
+    color: $color-accent-3
 
 // Media Queries
 @media screen and (min-width: 426px) //TABLET

@@ -65,8 +65,6 @@ const Home: NextPage = () => {
   const [isNavActive, setIsNavActive] = useState(false)
   const toggleNav = () => setIsNavActive(!isNavActive)
 
-  console.log(isNavActive)
-
   return (
     <div className={styles.container}>
       <Head>
@@ -135,12 +133,12 @@ const Home: NextPage = () => {
           <div className={styles.showcase}>
             {projectData.map(project => {
               return(
-                <div className={styles.card}>
+                <div className={styles.card} key={projectData.indexOf(project)}>
                   <Image 
                     src={project.image} 
                     className={styles.cardImage}
-                    width={400} 
-                    height={260}
+                    width={700} 
+                    height={400}
                   />
 
                     <div className={styles.projtext}>
