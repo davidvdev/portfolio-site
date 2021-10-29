@@ -1,5 +1,5 @@
 import type { NextPage } from 'next'
-import { useState} from 'react'
+import React, { useState} from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.sass'
@@ -20,6 +20,7 @@ import { FaGitAlt, FaHtml5, FaCss3Alt, FaJs, FaSass, FaReact, FaNodeJs, FaBars }
 import { SiSvelte, SiJquery, SiMarkdown, SiExpress, SiMongodb, SiPython, SiDjango, SiFastapi, SiFlask, SiRubyonrails, SiTypescript, SiPostgresql } from 'react-icons/si'
 import { DiRuby } from 'react-icons/di'
 import { MdClose } from 'react-icons/md'
+import { IconType } from 'react-icons'
 
 const icons = [
   BsGithub,
@@ -118,11 +119,23 @@ const Home: NextPage = () => {
           <h2 id="tech">Tech</h2>
           <ul>
             {techData.sort((a,b) => a.name.localeCompare(b.name)).map(item => {
-              const Icon = icons.find(icon => icon.name === item.img)
+              // const Icon = 
+              const renderer = (icon:IconType) => {
+                React.createElement(icon)
+              }
+              // class DyIcon extends IconType {
+              //   render() {
+              //     return <{this.props.Icon} />
+              //   }
+              // }
+              // function createIcon(Icon: React.ComponentClass) {
+              //   return(  
+              //     <Icon />
+              //   )}
               return(
                 <li key={techData.indexOf(item)}>
                   {/* @ts-ignore */}
-                  {/* <Icon /> */}
+                  {renderer(icons.find(icon => icon.name === item.img))}
                   <span> {item.name}</span>
                 </li>
               )
