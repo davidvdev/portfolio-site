@@ -122,7 +122,7 @@ const Home: NextPage = () => {
               return(
                 <li key={techData.indexOf(item)}>
                   {/* @ts-ignore */}
-                  <Icon />
+                  {/* <Icon /> */}
                   <span> {item.name}</span>
                 </li>
               )
