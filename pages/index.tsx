@@ -22,33 +22,33 @@ import { DiRuby } from 'react-icons/di'
 import { MdClose } from 'react-icons/md'
 import { IconType } from 'react-icons'
 
-const icons = [
-  BsGithub,
-  BsEnvelopeFill,
-  BsLinkedin,
-  FaGitAlt,
-  FaHtml5,
-  FaCss3Alt,
-  FaJs,
-  FaSass,
-  BsBootstrapFill,
-  FaReact,
-  SiSvelte,
-  SiJquery, 
-  SiMarkdown,
-  FaNodeJs,
-  SiExpress,
-  SiMongodb,
-  BsCodeSlash,
-  SiPython,
-  SiDjango,
-  SiFastapi,
-  SiFlask,
-  SiRubyonrails,
-  DiRuby,
-  SiTypescript,
-  SiPostgresql
-]
+const icons = {
+  BsGithub: BsGithub,
+  BsEnvelopeFill: BsEnvelopeFill,
+  BsLinkedin: BsLinkedin,
+  FaGitAlt: FaGitAlt,
+  FaHtml5: FaHtml5,
+  FaCss3Alt: FaCss3Alt,
+  FaJs: FaJs,
+  FaSass: FaSass,
+  BsBootstrapFill: BsBootstrapFill,
+  FaReact: FaReact,
+  SiSvelte: SiSvelte,
+  SiJquery: SiJquery, 
+  SiMarkdown: SiMarkdown,
+  FaNodeJs: FaNodeJs,
+  SiExpress: SiExpress,
+  SiMongodb: SiMongodb,
+  BsCodeSlash: BsCodeSlash,
+  SiPython: SiPython,
+  SiDjango: SiDjango,
+  SiFastapi: SiFastapi,
+  SiFlask: SiFlask,
+  SiRubyonrails: SiRubyonrails,
+  DiRuby: DiRuby,
+  SiTypescript: SiTypescript,
+  SiPostgresql: SiPostgresql
+}
 
 // Interfaces
 interface techData {
@@ -66,6 +66,11 @@ interface projectData {
 const Home: NextPage = () => {
   const [isNavActive, setIsNavActive] = useState(false)
   const toggleNav = () => setIsNavActive(!isNavActive)
+
+  const iconRender = (img:string) => {
+    // @ts-ignore
+    return React.createElement(icons[img])
+  }
 
   return (
     <div className={styles.container}>
@@ -119,23 +124,9 @@ const Home: NextPage = () => {
           <h2 id="tech">Tech</h2>
           <ul>
             {techData.sort((a,b) => a.name.localeCompare(b.name)).map(item => {
-              // const Icon = 
-              const renderer = (icon:IconType) => {
-                React.createElement(icon)
-              }
-              // class DyIcon extends IconType {
-              //   render() {
-              //     return <{this.props.Icon} />
-              //   }
-              // }
-              // function createIcon(Icon: React.ComponentClass) {
-              //   return(  
-              //     <Icon />
-              //   )}
               return(
                 <li key={techData.indexOf(item)}>
-                  {/* @ts-ignore */}
-                  {renderer(icons.find(icon => icon.name === item.img))}
+                  {iconRender(item.img)}
                   <span> {item.name}</span>
                 </li>
               )
