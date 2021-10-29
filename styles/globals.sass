@@ -15,7 +15,8 @@ body
   font-family: 'IBM Plex Sans', sans-serif
   background-image: url("../img/c64-double.svg")
   background-color: $light-accent
-  background-position: center
+  background-position: top
+
 
 a 
   color: inherit
@@ -44,3 +45,12 @@ main
 
 * 
   box-sizing: border-box
+
+@media screen and (min-width: 2560px) //BIG BIG SCREEN
+  main
+    width: 55%
+  
+  html, body
+    background-position: top
+    background-size: contain
+
