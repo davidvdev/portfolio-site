@@ -135,6 +135,7 @@ const Home: NextPage = () => {
               return(
                 <div className={styles.card} key={projectData.indexOf(project)}>
                   <Image 
+                    alt={project.name}
                     src={project.image} 
                     className={styles.cardImage}
                     width={700} 
