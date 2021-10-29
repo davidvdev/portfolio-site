@@ -90,7 +90,7 @@ const Home: NextPage = () => {
           <ul>
               <li><MdClose 
                 onClick={() => toggleNav()} 
-                style={{fontSize: '1.5em'}}
+                className={styles.navIcon}
               /></li>
               <a href="#about" onClick={() => toggleNav()}><li>About</li></a>
               <a href="#tech" onClick={() => toggleNav()}><li>Tech</li></a>
@@ -98,7 +98,9 @@ const Home: NextPage = () => {
               <a href="#contact" onClick={() => toggleNav()}><li>Contact</li></a>
           </ul>
         </nav>
-        <FaBars onClick={() => toggleNav()} style={{fontSize: '1.5em'}}/>
+        <FaBars 
+          onClick={() => toggleNav()} 
+          className={styles.navIcon}/>
       </header>
       <main>
         <div className={styles.about}>
