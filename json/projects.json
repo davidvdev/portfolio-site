@@ -42,6 +42,13 @@
     "image": "https://i.imgur.com/lxygRZA.webp"
   },
   {
+    "name": "Obsidian Note Timer",
+    "description":"My submission for the Obsidian October 2021 Plugin event. This is a simple plugin that leverages the Obsidian API and Typescript to create a local timer in markdown notes.",
+    "github": "https://github.com/davidvdev/obsidian-note-timer",
+    "deployed": "https://github.com/davidvdev/obsidian-note-timer/releases/tag/0.1.1",
+    "image": "https://github.com/davidvdev/obsidian-note-timer/blob/main/obsidian-timer.gif"
+  },
+  {
     "name": "Retro Rainbow",
     "description":"An experiment with Javscript, jQuery, and color combinations.",
     "github": "https://github.com/davidvdev/retro-rainbow",
