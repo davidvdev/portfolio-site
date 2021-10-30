@@ -46,7 +46,7 @@
     "description":"My submission for the Obsidian October 2021 Plugin event. This is a simple plugin that leverages the Obsidian API and Typescript to create a local timer in markdown notes.",
     "github": "https://github.com/davidvdev/obsidian-note-timer",
     "deployed": "https://github.com/davidvdev/obsidian-note-timer/releases/tag/0.1.1",
-    "image": "https://raw.githubusercontent.com/davidvdev/obsidian-note-timer/main/obsidian-timer.gif"
+    "image": "https://i.imgur.com/RyGcvLg.webp"
   },
   {
     "name": "Retro Rainbow",
