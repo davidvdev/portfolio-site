@@ -94,5 +94,9 @@
     {
         "name":"PostgreSQL",
         "img":"SiPostgresql"
+    },
+    {
+        "name":"Next.js",
+        "img":"SiNextdotjs"
     }
 ]  

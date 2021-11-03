@@ -17,7 +17,7 @@ const email = "david@davidvdev.com"
 // Icons
 import { BsGithub, BsEnvelopeFill, BsLinkedin, BsBootstrapFill, BsCodeSlash } from 'react-icons/bs'
 import { FaGitAlt, FaHtml5, FaCss3Alt, FaJs, FaSass, FaReact, FaNodeJs, FaBars } from 'react-icons/fa'
-import { SiSvelte, SiJquery, SiMarkdown, SiExpress, SiMongodb, SiPython, SiDjango, SiFastapi, SiFlask, SiRubyonrails, SiTypescript, SiPostgresql } from 'react-icons/si'
+import { SiSvelte, SiJquery, SiMarkdown, SiExpress, SiMongodb, SiPython, SiDjango, SiFastapi, SiFlask, SiRubyonrails, SiTypescript, SiPostgresql,SiNextdotjs } from 'react-icons/si'
 import { DiRuby } from 'react-icons/di'
 import { MdClose } from 'react-icons/md'
 import { IconType } from 'react-icons'
@@ -47,7 +47,8 @@ const icons = {
   SiRubyonrails: SiRubyonrails,
   DiRuby: DiRuby,
   SiTypescript: SiTypescript,
-  SiPostgresql: SiPostgresql
+  SiPostgresql: SiPostgresql,
+  SiNextdotjs: SiNextdotjs
 }
 
 // Interfaces
