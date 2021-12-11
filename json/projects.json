@@ -1,5 +1,12 @@
 [
   {
+    "name": "Reci-Please",
+    "description":"This project was the culmination of group efforts from team Snackathon during the 2021 General Assembly Job Seekers Hackathon. The challenge was to create a solution that addressed the accesibility needs of the elderly during the holiday season. As a team, we put together Reci-Please to provide our older relatives, friends, and neighbors with a fun and easy way to discover foods and recipes to share with friends and family.",
+    "github": "https://github.com/davidvdev/hackathon-snackathon",
+    "deployed": "https://hackathon-snackathon.vercel.app/",
+    "image": "https://i.imgur.com/MxUUxuY.webp"
+  },
+  {
     "name": "Session 0 RPG Group Finder",
     "description":"Session 0 is a prototype social groups app that allows TTRPG players to find groups to join and run. The app is built with a FaunaDB database and a React frontend. Features include user authentication and relational data driven pages.",
     "github": "https://github.com/davidvdev/session-0-frontend",
@@ -47,13 +54,6 @@
     "github": "https://github.com/davidvdev/obsidian-note-timer",
     "deployed": "https://github.com/davidvdev/obsidian-note-timer/releases/tag/0.1.1",
     "image": "https://i.imgur.com/RyGcvLg.webp"
-  },
-  {
-    "name": "Retro Rainbow",
-    "description":"An experiment with Javscript, jQuery, and color combinations.",
-    "github": "https://github.com/davidvdev/retro-rainbow",
-    "deployed": "https://retro-rainbow.vercel.app",
-    "image": "https://i.imgur.com/voE2LzI.webp"
   },
   {
     "name": "Mapapalooza",
