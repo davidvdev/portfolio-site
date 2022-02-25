@@ -18,7 +18,6 @@ import { FaGitAlt, FaHtml5, FaCss3Alt, FaJs, FaSass, FaReact, FaNodeJs, FaBars }
 import { SiSvelte, SiJquery, SiMarkdown, SiExpress, SiMongodb, SiPython, SiDjango, SiFastapi, SiFlask, SiRubyonrails, SiTypescript, SiPostgresql,SiNextdotjs } from 'react-icons/si'
 import { DiRuby } from 'react-icons/di'
 import { MdClose } from 'react-icons/md'
-import { IconType } from 'react-icons'
 
 const icons = {
   BsGithub: BsGithub,

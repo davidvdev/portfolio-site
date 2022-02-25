@@ -13,9 +13,9 @@ body
   padding: 0
   margin: 0
   font-family: 'IBM Plex Sans', sans-serif
-  background-image: url("/c64-double.svg")
-  background-color: $light-accent
-  background-position: top
+  // background-image: url("/c64-double.svg")
+  // background-color: $light-accent
+  // background-position: top
   scroll-behavior: smooth
 
 
@@ -34,13 +34,21 @@ h1
 h2
   margin-top: 1em
   font-size: 3em
+  background-color: $dark-accent
+  color: white
+  border-radius: 360px
 
 h2, h4
   text-align: center
 
 main
-  margin: 0 auto
-  width: 98%
+  padding: 0
+  margin: 0
+  width: 100%
+  background-color: $light-accent
+
+  > *
+    padding: 0 2%
 
 * 
   box-sizing: border-box
@@ -51,4 +59,7 @@ main
 
 @media screen and (min-width: 2560px) //BIG BIG SCREEN
   main
-    width: 55%
+    width: 100%
+    > *
+      width: 55%
+      margin: 0 auto
