@@ -3,13 +3,11 @@ import React, { useState} from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.sass'
-import MyDocument from './_document'
 
 // Data
 import techData from '../json/tech.json'
 import projectData from '../json/projects.json'
 const repo = "https://github.com/davidvdev/portfolio-site"
-const resume = "https://drive.google.com/file/d/1mtYv0woUhpOGFzAL_LjVFWKdPRkR-2ek/view?usp=sharing"
 const linkedIn = "https://www.linkedin.com/in/davidvdev"
 const github = "https://github.com/davidvdev"
 const email = "david@davidvdev.com"
