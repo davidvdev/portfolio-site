@@ -104,9 +104,9 @@ const Home: NextPage = () => {
         <div className={styles.about}>
           <div className={styles.headshotContainer}>
             <Image 
-              src='https://i.imgur.com/T6kqhid.jpg' 
+              src='https://i.imgur.com/N7gNvqbh.jpg' 
               alt="David Vogel portrait" 
-              className={styles.headshot}
+              className={styles.headshotContainer}
               height={350} 
               width={350} 
             />
