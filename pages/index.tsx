@@ -123,13 +123,15 @@ const Home: NextPage = () => {
         </div>
         <div className={styles.tech}>
           <h2 id="tech">Tech</h2>
-          <div className="favTechCard" onClick={() => flipCard()}>
+          <div className={isFavTechFlip ? styles.favTechCard : styles.favTechCard +" "+ styles.flipped} 
+            onClick={() => flipCard()}
+          >
             <div className="cardInner">
               <div className= {isFavTechFlip ? "cardFront visible": "cardFront hidden" }>
                 <h3>Favorite Tech</h3>
                 <h4>Front End</h4>
               </div>
-              <div className={isFavTechFlip ? "cardBack visible": "cardBack hidden" } >
+              <div className={isFavTechFlip ? "cardBack hidden": "cardBack visible" } >
                 <h3>Favorite Tech</h3>
                 <h4>Back End</h4>
               </div>
