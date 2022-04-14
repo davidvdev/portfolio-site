@@ -63,6 +63,7 @@ interface projectData {
 
 const Home: NextPage = () => {
   const [isNavActive, setIsNavActive] = useState(false)
+  const [isFavTechFlip, setIsFavTechFlip] = useState(false)
   const toggleNav = () => setIsNavActive(!isNavActive)
 
   const iconRender = (img:string) => {
@@ -120,6 +121,18 @@ const Home: NextPage = () => {
         </div>
         <div className={styles.tech}>
           <h2 id="tech">Tech</h2>
+          <div className="favTechCard" onClick={() => className=""}>
+            <div className="cardInner">
+              <div className="cardFront">
+                <h3>Favorite Tech</h3>
+                <h4>Front End</h4>
+              </div>
+              <div className="cardBack">
+                <h3>Favorite Tech</h3>
+                <h4>Back End</h4>
+              </div>
+            </div>
+          </div>
           <ul>
             {techData.sort((a,b) => a.name.localeCompare(b.name)).map(item => {
               return(
