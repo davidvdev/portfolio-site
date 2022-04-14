@@ -64,7 +64,9 @@ interface projectData {
 const Home: NextPage = () => {
   const [isNavActive, setIsNavActive] = useState(false)
   const [isFavTechFlip, setIsFavTechFlip] = useState(false)
+
   const toggleNav = () => setIsNavActive(!isNavActive)
+  const flipCard = () => setIsFavTechFlip(!isFavTechFlip)
 
   const iconRender = (img:string) => {
     // @ts-ignore
@@ -121,13 +123,13 @@ const Home: NextPage = () => {
         </div>
         <div className={styles.tech}>
           <h2 id="tech">Tech</h2>
-          <div className="favTechCard" onClick={() => className=""}>
+          <div className="favTechCard" onClick={() => flipCard()}>
             <div className="cardInner">
-              <div className="cardFront">
+              <div className= {isFavTechFlip ? "cardFront visible": "cardFront hidden" }>
                 <h3>Favorite Tech</h3>
                 <h4>Front End</h4>
               </div>
-              <div className="cardBack">
+              <div className={isFavTechFlip ? "cardBack visible": "cardBack hidden" } >
                 <h3>Favorite Tech</h3>
                 <h4>Back End</h4>
               </div>
