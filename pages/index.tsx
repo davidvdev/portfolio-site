@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import React, { useState} from 'react'
+import ReactCardFlip from 'react-card-flip'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.sass'
@@ -7,6 +8,7 @@ import styles from '../styles/Home.module.sass'
 // Data
 import techData from '../json/tech.json'
 import projectData from '../json/projects.json'
+import favTechData from '../json/favTech.json'
 const repo = "https://github.com/davidvdev/portfolio-site"
 const linkedIn = "https://www.linkedin.com/in/davidvdev"
 const github = "https://github.com/davidvdev"
@@ -63,7 +65,10 @@ interface projectData {
 
 const Home: NextPage = () => {
   const [isNavActive, setIsNavActive] = useState(false)
+  const [isFavTechFlip, setIsFavTechFlip] = useState(false)
+
   const toggleNav = () => setIsNavActive(!isNavActive)
+  const flipCard = () => setIsFavTechFlip(!isFavTechFlip)
 
   const iconRender = (img:string) => {
     // @ts-ignore
@@ -120,6 +125,44 @@ const Home: NextPage = () => {
         </div>
         <div className={styles.tech}>
           <h2 id="tech">Tech</h2>
+
+          <div onClick={() => flipCard()} className={styles.favTech}>
+            <ReactCardFlip isFlipped={isFavTechFlip}>
+              <div className={styles.favTechFront}>
+                <h3>Favorite Tech</h3>
+                <h4>Front End</h4>
+                <ul className={styles.favTechList}>
+                {favTechData.frontEnd.map(item => {
+                  return(
+                    <li key={favTechData.frontEnd.indexOf(item)} className={styles.favTechItem}>
+                        {iconRender(item.img)}
+                      <span> {item.name}</span>
+                    </li>
+                  )
+                })}
+                </ul>
+                <p>click to flip</p>
+              </div>
+
+              <div className={styles.favTechBack}>
+                <h3>Favorite Tech</h3>
+                <h4>Back End</h4>
+                <ul className={styles.favTechList}>
+                {favTechData.backEnd.map(item => {
+                  return(
+                    <li key={favTechData.backEnd.indexOf(item)} className={styles.favTechItem}>
+                      {iconRender(item.img)}
+                      <span> {item.name}</span>
+                    </li>
+                  )
+                })}
+                </ul>
+                <p>click to flip</p>
+              </div>
+
+            </ReactCardFlip>
+          </div>
+
           <ul>
             {techData.sort((a,b) => a.name.localeCompare(b.name)).map(item => {
               return(

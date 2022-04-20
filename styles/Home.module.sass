@@ -105,6 +105,46 @@ $color-accent-5: #009EDA
       width: 50%
       font-size: 1.2em
 
+.favTech
+  margin: 0 auto 2em auto
+  border-radius: 16px
+  h3
+    background-color: $dark-accent
+    color: $white
+    object-fit: contain
+    border-radius: 16px 16px 0 0
+  h3, h4  
+    text-align: center
+    padding: 0.25em
+    margin: 0
+  p
+    color: $light-accent
+    padding: 0 0.25em
+    text-align: center
+    font-style: italic
+
+.favTechFront, .favTechBack
+  transition: transform 0.3s
+  border-radius: 16px
+  background-color: $white
+  padding-bottom: 0.125em
+
+.favTechItem
+  flex-direction: column
+  justify-content: flex-start
+  svg
+    height: 2em
+    width: 2em
+
+.favTechFront
+  h4
+    background-color: $color-accent-5
+
+
+.favTechBack
+  h4
+    background-color: $color-accent-4
+  
 .work
   .showcase
     display: flex
@@ -151,7 +191,6 @@ $color-accent-5: #009EDA
     display: flex
     align-items: center
     justify-content: center
-    // margin-bottom: 2em
 
     li
       font-size: 3em
@@ -195,6 +234,9 @@ $color-accent-5: #009EDA
   .tech ul li
     width: 30%
 
+  .favTech
+    max-width: 80%
+
   .contact, .work
     margin-top: 10em
 
@@ -209,6 +251,9 @@ $color-accent-5: #009EDA
       width: 55%
   .tech ul li
     width: 25%
+
+  .favTech
+    max-width: 60%
 
   .inactive
     visibility: visible
