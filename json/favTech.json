@@ -1,0 +1,31 @@
+{
+    "frontEnd" : [
+        {
+            "name":"JavaScript",
+            "img":"FaJs"
+        },
+        {
+            "name":"React",
+            "img":"FaReact"
+        },
+        {
+            "name":"TypeScript",
+            "img":"SiTypescript"
+        },
+        {
+            "name":"Next.js",
+            "img":"SiNextdotjs"
+        },
+        {
+            "name":"CSS",
+            "img":"FaCss3Alt"
+        },
+        {
+            "name":"Sass/SCSS",
+            "img":"FaSass"
+        }
+    ],
+    "backEnd" : [
+
+    ]
+}

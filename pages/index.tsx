@@ -145,7 +145,7 @@ const Home: NextPage = () => {
               <div className={styles.favTechBack}>
                 <h3>Favorite Tech</h3>
                 <h4>Back End</h4>
-                <ul>
+                <ul className={styles.favTechList}>
                   <li>Node.js</li>
                   <li>Express</li>
                   <li>MongoDB</li>
