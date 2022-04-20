@@ -126,7 +126,6 @@ const Home: NextPage = () => {
         <div className={styles.tech}>
           <h2 id="tech">Tech</h2>
 
-          {/* BEGIN TEST AREA */}
           <div onClick={() => flipCard()} className={styles.favTech}>
             <ReactCardFlip isFlipped={isFavTechFlip}>
               <div className={styles.favTechFront}>
@@ -164,7 +163,6 @@ const Home: NextPage = () => {
             </ReactCardFlip>
           </div>
 
-          {/* END OF TEST AREA */}
           <ul>
             {techData.sort((a,b) => a.name.localeCompare(b.name)).map(item => {
               return(
