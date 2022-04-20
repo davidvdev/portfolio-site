@@ -125,28 +125,33 @@ const Home: NextPage = () => {
         <div className={styles.tech}>
           <h2 id="tech">Tech</h2>
 
-          {/* <div className={isFavTechFlip ? styles.favTechCard : styles.favTechCard +" "+ styles.flipped} 
-            onClick={() => flipCard()}
-          >
-            <div className="cardInner">
-              <div className= {isFavTechFlip ? "cardFront visible": "cardFront hidden" }>
-                <h3>Favorite Tech</h3>
-                <h4>Front End</h4>
-              </div>
-              <div className={isFavTechFlip ? "cardBack hidden": "cardBack visible" } >
-                <h3>Favorite Tech</h3>
-                <h4>Back End</h4>
-              </div>
-            </div>
-          </div> */}
           {/* BEGIN TEST AREA */}
           <div onClick={() => flipCard()} className={styles.favTech}>
             <ReactCardFlip isFlipped={isFavTechFlip}>
               <div className={styles.favTechFront}>
+                <h3>Favorite Tech</h3>
+                <h4>Front End</h4>
+                <ul>
+                  <li>JavaScript</li>
+                  <li>React</li>
+                  <li>Typescript</li>
+                  <li>Next.js</li>
+                  <li>CSS</li>
+                  <li>Sass/Scss</li>
+                </ul>
 
               </div>
               <div className={styles.favTechBack}>
-
+                <h3>Favorite Tech</h3>
+                <h4>Back End</h4>
+                <ul>
+                  <li>Node.js</li>
+                  <li>Express</li>
+                  <li>MongoDB</li>
+                  <li>PostgreSQL</li>
+                  <li>Python</li>
+                  <li>FastAPI</li>
+                </ul>
               </div>
 
             </ReactCardFlip>
