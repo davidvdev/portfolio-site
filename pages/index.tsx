@@ -139,8 +139,9 @@ const Home: NextPage = () => {
                   <li>CSS</li>
                   <li>Sass/Scss</li>
                 </ul>
-
+                <p>click to flip</p>
               </div>
+
               <div className={styles.favTechBack}>
                 <h3>Favorite Tech</h3>
                 <h4>Back End</h4>
@@ -152,6 +153,7 @@ const Home: NextPage = () => {
                   <li>Python</li>
                   <li>FastAPI</li>
                 </ul>
+                <p>click to flip</p>
               </div>
 
             </ReactCardFlip>
