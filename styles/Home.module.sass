@@ -108,6 +108,11 @@ $color-accent-5: #009EDA
 .favTech
   margin: 0 auto 2em auto
   border-radius: 16px
+  transition: transform 0.3s
+  :hover
+    transition: transform 0.3s
+    cursor: pointer
+    transform: scale(1.01)
   h3
     background-color: $dark-accent
     color: $white
@@ -121,12 +126,14 @@ $color-accent-5: #009EDA
 .favTechFront
   border-radius: 16px
   background-color: $white
+  transition: transform 0.3s
   h4
     background-color: $color-accent-5
 
 .favTechBack
   border-radius: 16px
   background-color: $white
+  transition: transform 0.3s
   h4
     background-color: $color-accent-4
 
