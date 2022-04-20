@@ -8,6 +8,7 @@ import styles from '../styles/Home.module.sass'
 // Data
 import techData from '../json/tech.json'
 import projectData from '../json/projects.json'
+import favTechData from '../json/favTech.json'
 const repo = "https://github.com/davidvdev/portfolio-site"
 const linkedIn = "https://www.linkedin.com/in/davidvdev"
 const github = "https://github.com/davidvdev"
@@ -131,13 +132,15 @@ const Home: NextPage = () => {
               <div className={styles.favTechFront}>
                 <h3>Favorite Tech</h3>
                 <h4>Front End</h4>
-                <ul>
-                  <li>JavaScript</li>
-                  <li>React</li>
-                  <li>Typescript</li>
-                  <li>Next.js</li>
-                  <li>CSS</li>
-                  <li>Sass/Scss</li>
+                <ul className={styles.favTechList}>
+                {favTechData.frontEnd.map(item => {
+                  return(
+                    <li key={favTechData.frontEnd.indexOf(item)} className={styles.favTechItem}>
+                        {iconRender(item.img)}
+                      <span> {item.name}</span>
+                    </li>
+                  )
+                })}
                 </ul>
                 <p>click to flip</p>
               </div>
@@ -146,12 +149,14 @@ const Home: NextPage = () => {
                 <h3>Favorite Tech</h3>
                 <h4>Back End</h4>
                 <ul className={styles.favTechList}>
-                  <li>Node.js</li>
-                  <li>Express</li>
-                  <li>MongoDB</li>
-                  <li>PostgreSQL</li>
-                  <li>Python</li>
-                  <li>FastAPI</li>
+                {favTechData.backEnd.map(item => {
+                  return(
+                    <li key={favTechData.backEnd.indexOf(item)} className={styles.favTechItem}>
+                      {iconRender(item.img)}
+                      <span> {item.name}</span>
+                    </li>
+                  )
+                })}
                 </ul>
                 <p>click to flip</p>
               </div>

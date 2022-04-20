@@ -26,6 +26,29 @@
         }
     ],
     "backEnd" : [
-
+        {
+            "name":"Node",
+            "img":"FaNodeJs"
+        },
+        {
+            "name":"Express",
+            "img":"SiExpress"
+        },
+        {
+            "name":"MongoDB",
+            "img":"SiMongodb"
+        },
+        {
+            "name":"PostgreSQL",
+            "img":"SiPostgresql"
+        },
+        {
+            "name":"Python",
+            "img":"SiPython"
+        },
+        {
+            "name":"FastAPI",
+            "img":"SiFastapi"
+        }
     ]
 }
