@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import React, { useState} from 'react'
+import ReactCardFlip from 'react-card-flip'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.sass'
@@ -123,7 +124,8 @@ const Home: NextPage = () => {
         </div>
         <div className={styles.tech}>
           <h2 id="tech">Tech</h2>
-          <div className={isFavTechFlip ? styles.favTechCard : styles.favTechCard +" "+ styles.flipped} 
+
+          {/* <div className={isFavTechFlip ? styles.favTechCard : styles.favTechCard +" "+ styles.flipped} 
             onClick={() => flipCard()}
           >
             <div className="cardInner">
@@ -136,7 +138,21 @@ const Home: NextPage = () => {
                 <h4>Back End</h4>
               </div>
             </div>
+          </div> */}
+          {/* BEGIN TEST AREA */}
+          <div onClick={() => flipCard()} className={styles.favTech}>
+            <ReactCardFlip isFlipped={isFavTechFlip}>
+              <div className={styles.favTechFront}>
+
+              </div>
+              <div className={styles.favTechBack}>
+
+              </div>
+
+            </ReactCardFlip>
           </div>
+
+          {/* END OF TEST AREA */}
           <ul>
             {techData.sort((a,b) => a.name.localeCompare(b.name)).map(item => {
               return(
