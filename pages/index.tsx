@@ -12,10 +12,11 @@ import favTechData from '../json/favTech.json'
 const repo = "https://github.com/davidvdev/portfolio-site"
 const linkedIn = "https://www.linkedin.com/in/davidvdev"
 const github = "https://github.com/davidvdev"
+const mastodon = "https://hachyderm.io/@davidvdev"
 const email = "david@davidvdev.com"
 
 // Icons
-import { BsGithub, BsEnvelopeFill, BsLinkedin, BsBootstrapFill, BsCodeSlash } from 'react-icons/bs'
+import { BsGithub, BsEnvelopeFill, BsLinkedin, BsBootstrapFill, BsCodeSlash, BsMastodon } from 'react-icons/bs'
 import { FaGitAlt, FaHtml5, FaCss3Alt, FaJs, FaSass, FaReact, FaNodeJs, FaBars } from 'react-icons/fa'
 import { SiSvelte, SiJquery, SiMarkdown, SiExpress, SiMongodb, SiPython, SiDjango, SiFastapi, SiFlask, SiRubyonrails, SiTypescript, SiPostgresql,SiNextdotjs } from 'react-icons/si'
 import { DiRuby } from 'react-icons/di'
@@ -210,6 +211,11 @@ const Home: NextPage = () => {
               <li>
                 <a href={github} target="_blank" rel="noreferrer">
                   <BsGithub />
+                </a>
+              </li>
+              <li>
+                <a href={mastodon} rel="me">
+                  <BsMastodon />
                 </a>
               </li>
               <li>
